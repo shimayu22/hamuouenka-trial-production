@@ -1,3 +1,4 @@
+
 //
 //  DisplayViewController.swift
 //  hamuouenka
@@ -11,6 +12,7 @@ import UIKit
 class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource {
     
     let idList = ["BO1", "BO2", "BO3","BO4","BO5","BO6","BO7","BO8","BO9"]
+    //let idList = ["BO1", "BO1", "BO1","BO1","BO1","BO1","BO1","BO1","BO1"]
     
     var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]//スタメン9人分の配列を用意をする
     var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
@@ -63,12 +65,15 @@ class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource
     //右ドラッグ時の呼び出しメソッド
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
+        //let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         //現在のビューコントローラーのインデックス番号を取得する。
         let index = idList.index(of: viewController.restorationIdentifier!)!
         if (index > 0) {
             //前ページのビューコントローラーを返す。
+            //appDelegate.page = index
             return storyboard!.instantiateViewController(withIdentifier: idList[index-1])
         }else if (index == 0){
+            //appDelegate.page = index
             return storyboard!.instantiateViewController(withIdentifier: idList[index+8])
         }
         return nil
@@ -80,12 +85,16 @@ class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource
     //左ドラッグ時の呼び出しメソッド
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
+        //let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
         //現在のビューコントローラーのインデックス番号を取得する。
         let index = idList.index(of: viewController.restorationIdentifier!)!
         if (index < idList.count-1) {
             //次ページのビューコントローラーを返す。
+            
             return storyboard!.instantiateViewController(withIdentifier: idList[index+1])
         }else if(index == idList.count-1){
+            //appDelegate.page = index
             return storyboard!.instantiateViewController(withIdentifier: idList[index-8])
         }
         return nil

@@ -36,25 +36,33 @@ class PlayerSelectViewController: UIViewController {
     
     
     @IBAction func clear(_ sender:AnyObject){
-        order.removeAll()
         
         Enter.isEnabled = false;
-        YODAIKAN.isEnabled = true;
-        SUGIYAKENSHI.isEnabled = true;
-        TANAKAKENSUKE.isEnabled = true;
-        LAIRD.isEnabled = true;
-        NAKATASYO.isEnabled = true;
-        NISHIKAWAHARUKI.isEnabled = true;
-        KONDOKENSUKE.isEnabled = true;
-        NAKASHIMATAKUYA.isEnabled = true;
-        OTANISYOHEI.isEnabled = true;
-        ASAMADAIKI.isEnabled = true;
-        OHNOSYOTA.isEnabled = true;
-        OKAHIROMI.isEnabled = true;
-        ISHIKAWASINGO.isEnabled = true;
-        ICHIKAWATOMOYA.isEnabled = true;
-        TANIGUCHIYUYA.isEnabled = true;
+        
+        for(index,element) in order.enumerated(){
+            let tmpButton = self.view.viewWithTag(element) as? UIButton
+            tmpButton?.isEnabled = true;
+        }
+        
+        order.removeAll()
         Border.text = "1番を選んでください"
+        debuglabel.text = "選手を選択してください"
+        
+//        YODAIKAN.isEnabled = true;
+//        SUGIYAKENSHI.isEnabled = true;
+//        TANAKAKENSUKE.isEnabled = true;
+//        LAIRD.isEnabled = true;
+//        NAKATASYO.isEnabled = true;
+//        NISHIKAWAHARUKI.isEnabled = true;
+//        KONDOKENSUKE.isEnabled = true;
+//        NAKASHIMATAKUYA.isEnabled = true;
+//        OTANISYOHEI.isEnabled = true;
+//        ASAMADAIKI.isEnabled = true;
+//        OHNOSYOTA.isEnabled = true;
+//        OKAHIROMI.isEnabled = true;
+//        ISHIKAWASINGO.isEnabled = true;
+//        ICHIKAWATOMOYA.isEnabled = true;
+//        TANIGUCHIYUYA.isEnabled = true;
         
     }
     
@@ -66,106 +74,114 @@ class PlayerSelectViewController: UIViewController {
             let lastelement:Int = order.last!
             Enter.isEnabled = false;
             
-            switch lastelement {
-            case 1:
-                YODAIKAN.isEnabled = true;
-            case 2:
-                SUGIYAKENSHI.isEnabled = true;
-            case 3:
-                TANAKAKENSUKE.isEnabled = true;
-            case 5:
-                LAIRD.isEnabled = true;
-            case 6:
-                NAKATASYO.isEnabled = true;
-            case 7:
-                NISHIKAWAHARUKI.isEnabled = true;
-            case 8:
-                KONDOKENSUKE.isEnabled = true;
-            case 9:
-                NAKASHIMATAKUYA.isEnabled = true;
-            case 11:
-                OTANISYOHEI.isEnabled = true;
-            case 26:
-                ASAMADAIKI.isEnabled = true;
-            case 27:
-                OHNOSYOTA.isEnabled = true;
-            case 31:
-                OKAHIROMI.isEnabled = true;
-            case 49:
-                ISHIKAWASINGO.isEnabled = true;
-            case 56:
-                ICHIKAWATOMOYA.isEnabled = true;
-            case 64:
-                TANIGUCHIYUYA.isEnabled = true;
-                
-            default:
-                debuglabel.text = "エラーです"
-            }
+            let tmpButton = self.view.viewWithTag(lastelement) as? UIButton
+            tmpButton?.isEnabled = true;
             
             order.removeLast()
+            if order.isEmpty{
+                debuglabel.text = "選手を選択してください"
+            }else{
+                debuglabel.text = String(describing: order)
+            }
             Border.text = "\(order.count + 1)番を選んでください"
-            debuglabel.text = String(describing: order)
+            
+//            switch lastelement {
+//            case 1:
+//                YODAIKAN.isEnabled = true;
+//            case 2:
+//                SUGIYAKENSHI.isEnabled = true;
+//            case 3:
+//                TANAKAKENSUKE.isEnabled = true;
+//            case 5:
+//                LAIRD.isEnabled = true;
+//            case 6:
+//                NAKATASYO.isEnabled = true;
+//            case 7:
+//                NISHIKAWAHARUKI.isEnabled = true;
+//            case 8:
+//                KONDOKENSUKE.isEnabled = true;
+//            case 9:
+//                NAKASHIMATAKUYA.isEnabled = true;
+//            case 11:
+//                OTANISYOHEI.isEnabled = true;
+//            case 26:
+//                ASAMADAIKI.isEnabled = true;
+//            case 27:
+//                OHNOSYOTA.isEnabled = true;
+//            case 31:
+//                OKAHIROMI.isEnabled = true;
+//            case 49:
+//                ISHIKAWASINGO.isEnabled = true;
+//            case 56:
+//                ICHIKAWATOMOYA.isEnabled = true;
+//            case 64:
+//                TANIGUCHIYUYA.isEnabled = true;
+            
+//            default:
+//                debuglabel.text = "エラーです"
+//            }
+            
         }
     }
     
     @IBAction func YODAIKAN(_ sender:AnyObject){
-        ButtonCP(1, button: YODAIKAN)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func SUGIYAKENSHI(_ sender:AnyObject){
-        ButtonCP(2, button: SUGIYAKENSHI)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func TANAKAKENSUKE(_ sender:AnyObject){
-        ButtonCP(3, button: TANAKAKENSUKE)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func LAIRD(_ sender:AnyObject){
-        ButtonCP(5, button: LAIRD)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func NAKATASYO(_ sender:AnyObject){
-        ButtonCP(6, button: NAKATASYO)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func NISHIKAWAHARUKI(_ sender:AnyObject){
-        ButtonCP(7, button: NISHIKAWAHARUKI)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func KONDOKENSUKE(_ sender:AnyObject){
-        ButtonCP(8, button: KONDOKENSUKE)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func NAKASHIMATAKUYA(_ sender:AnyObject){
-        ButtonCP(9, button: NAKASHIMATAKUYA)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func OTANISYOHEI(_ sender:AnyObject){
-        ButtonCP(11, button: OTANISYOHEI)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func ASAMADAIKI(_ sender:AnyObject){
-        ButtonCP(26, button: ASAMADAIKI)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func OHNOSYOTA(_ sender:AnyObject){
-        ButtonCP(27, button: OHNOSYOTA)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func OKAHIROMI(_ sender:AnyObject){
-        ButtonCP(31, button: OKAHIROMI)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func ISHIKAWASINGO(_ sender:AnyObject){
-        ButtonCP(49, button: ISHIKAWASINGO)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func ICHIKAWATOMOYA(_ sender:AnyObject){
-        ButtonCP(56, button: ICHIKAWATOMOYA)
+        ButtonCP(button: sender as! UIButton)
     }
     
     @IBAction func TANIGUTCHIYUYA(_ sender:AnyObject){
-        ButtonCP(64, button: TANIGUCHIYUYA)
+        ButtonCP(button: sender as! UIButton)
     }
     
     
@@ -182,9 +198,10 @@ class PlayerSelectViewController: UIViewController {
     }
     
     //ボタン共通処理
-    func ButtonCP(_ number: Int,button:UIButton){
+    //func ButtonCP(_ number: Int,button:UIButton){
+    func ButtonCP(button:UIButton){
         if order.count < 9{
-            order.append(number)
+            order.append(button.tag)
             button.isEnabled = false;
             if order.count < 9{
                 Border.text = "\(order.count + 1)番を選んでください"
