@@ -39,7 +39,7 @@ class PlayerSelectViewController: UIViewController {
         
         Enter.isEnabled = false;
         
-        for(index,element) in order.enumerated(){
+        for(_,element) in order.enumerated(){
             let tmpButton = self.view.viewWithTag(element) as? UIButton
             tmpButton?.isEnabled = true;
         }

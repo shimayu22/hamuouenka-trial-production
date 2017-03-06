@@ -17,13 +17,16 @@ class BattingOrder1: UIViewController {
     
     //@IBOutlet weak var songtext1: UITextView!
     
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let playerdata = appDelegate.playerdata
+        let page = appDelegate.page
+        let number = page! + 1
         
-        
-        //battingOrder.text = "1番"
-        name1.text = "\(appDelegate.playerdata[appDelegate.page][1]):背番号　\(appDelegate.playerdata[appDelegate.page][0])"
-        songtext1.text = "\(appDelegate.playerdata[appDelegate.page][2])"
+        battingOrder.text = "\(number)番"
+        name1.text = "\(playerdata[page!][1]):背番号　\(playerdata[page!][0])"
+        songtext1.text = "\(playerdata[page!][2])"
     }
 }

@@ -11,13 +11,14 @@ import UIKit
 
 class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource {
     
-    let idList = ["BO1", "BO2", "BO3","BO4","BO5","BO6","BO7","BO8","BO9"]
+    //let idList = ["BO1", "BO2", "BO3","BO4","BO5","BO6","BO7","BO8","BO9"]
     //let idList = ["BO1", "BO1", "BO1","BO1","BO1","BO1","BO1","BO1","BO1"]
     
     var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]//スタメン9人分の配列を用意をする
     var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
-    var order :[Int] = []//スタメンの背番号を保持する
-
+    var order :[Int] = []//スタメンの背番号を保持す
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    let pageView = "BO1"
     
     //最初からあるメソッド
     override func viewDidLoad() {
@@ -34,25 +35,24 @@ class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource
             let numString:String = String(order[orderIndex])
             if let Array = (playerJsonData[numString]){
                 playerdata[orderIndex] = Array
-//                print("---------DVC-----------")
-//                print(orderIndex + 1)
-//                print(playerdata[orderIndex][0])
-//                print(playerdata[orderIndex][1])
-//                print(playerdata[orderIndex][2])
-//                print(playerdata[orderIndex][3])
-//                print(playerdata[orderIndex][4])
-//                print("-----------------------")
+                //                print("---------DVC-----------")
+                //                print(orderIndex + 1)
+                //                print(playerdata[orderIndex][0])
+                //                print(playerdata[orderIndex][1])
+                //                print(playerdata[orderIndex][2])
+                //                print(playerdata[orderIndex][3])
+                //                print(playerdata[orderIndex][4])
+                //                print("-----------------------")
                 
             }
         }
         
         //AppDelegateへ値を送る
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.playerdata = playerdata
-        
+        appDelegate.page = 0
         
         //最初のビューコントローラーを取得する。
-        let controller = storyboard!.instantiateViewController(withIdentifier: idList.first!)
+        let controller = storyboard!.instantiateViewController(withIdentifier: pageView)
         
         //ビューコントローラーを表示する。
         self.setViewControllers([controller], direction: .forward, animated: true, completion:nil)
@@ -65,38 +65,36 @@ class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource
     //右ドラッグ時の呼び出しメソッド
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        //let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         //現在のビューコントローラーのインデックス番号を取得する。
-        let index = idList.index(of: viewController.restorationIdentifier!)!
-        if (index > 0) {
-            //前ページのビューコントローラーを返す。
-            //appDelegate.page = index
-            return storyboard!.instantiateViewController(withIdentifier: idList[index-1])
-        }else if (index == 0){
-            //appDelegate.page = index
-            return storyboard!.instantiateViewController(withIdentifier: idList[index+8])
+        //index = idList.index(of: viewController.restorationIdentifier!)!
+        let index = appDelegate.page
+        //前ページのビューコントローラーを返す。
+        if (index == 0) {
+            //appDelegate.page = index! + 8
+            //return storyboard!.instantiateViewController(withIdentifier: pageView)
+            return nil
+        }else{
+            appDelegate.page = index! - 1
+            return storyboard!.instantiateViewController(withIdentifier: pageView)
         }
-        return nil
-        
     }
-    
-    
-    
+
     //左ドラッグ時の呼び出しメソッド
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        //let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         //現在のビューコントローラーのインデックス番号を取得する。
-        let index = idList.index(of: viewController.restorationIdentifier!)!
-        if (index < idList.count-1) {
-            //次ページのビューコントローラーを返す。
-            
-            return storyboard!.instantiateViewController(withIdentifier: idList[index+1])
-        }else if(index == idList.count-1){
-            //appDelegate.page = index
-            return storyboard!.instantiateViewController(withIdentifier: idList[index-8])
+        //index = idList.index(of: viewController.restorationIdentifier!)!
+        let index = appDelegate.page
+        
+        //次ページのビューコントローラーを返す。
+        if (index! > 7) {
+            //appDelegate.page = index! - 9
+            //return storyboard!.instantiateViewController(withIdentifier: pageView)
+            return nil
+        }else{
+            appDelegate.page = index! + 1
+            return storyboard!.instantiateViewController(withIdentifier: pageView)
         }
-        return nil
     }
+    
 }
