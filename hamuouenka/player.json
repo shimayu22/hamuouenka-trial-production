@@ -1,0 +1,457 @@
+ [
+  {
+  "called": "陽岱鋼",
+  "flag": "1",
+  "lyrics": "飛ばせ 飛ばせ遥か夢の彼方へ届けろ祖国の地へと加油(ジャーヨ)！岱鋼！今ここから",
+  "name": "陽 岱鋼",
+  "number": "1"
+  },
+  {
+  "called": "拳士",
+  "flag": "1",
+  "lyrics": "グラウンドに輝く一番星をその拳をあげて掴め 杉谷拳士",
+  "name": "杉谷 拳士",
+  "number": "2"
+  },
+  {
+  "called": "賢介",
+  "flag": "1",
+  "lyrics": "どこまでも飛ばせ賢介ガッツだ Go Go Go僕らは待つよ輝く瞬間（かっとばせ!!　賢介）",
+  "name": "田中 賢介",
+  "number": "3"
+  },
+  {
+  "called": "裕志",
+  "flag": "1",
+  "lyrics": "裕志 裕志かっとばせ裕志ラララララララ ララかっとばせ裕志",
+  "name": "飯山 裕志",
+  "number": "4"
+  },
+  {
+  "called": "レアード",
+  "flag": "1",
+  "lyrics": "この大地を照らす希望を胸に信じる皆を背にホームラン",
+  "name": "レアード",
+  "number": "5"
+  },
+  {
+  "called": "中田",
+  "flag": "1",
+  "lyrics": "勝負決める一振り血と汗の勲章その手で夢掴めさぁ翔け中田",
+  "name": "中田 翔",
+  "number": "6"
+  },
+  {
+  "called": "西川",
+  "flag": "1",
+  "lyrics": "今だ 西川遥かに続いた道を走れ 西川輝くその日まで（かっとばせ!!　西川）",
+  "name": "西川 遥輝",
+  "number": "7"
+  },
+  {
+  "called": "近藤",
+  "flag": "1",
+  "lyrics": "さぁ狙いを定め遠く遠く飛ばせ眩く(まばゆく)光る時代(とき)近藤 築き上げろ",
+  "name": "近藤 健介",
+  "number": "8"
+  },
+  {
+  "called": "中島",
+  "flag": "1",
+  "lyrics": "踏み出した姿に最高の期待込めて今、頂目指し進め挑み勝て中島（かっ飛ばせ!!　中島）",
+  "name": "中島 卓也",
+  "number": "9"
+  },
+  {
+  "called": "清水",
+  "flag": "2",
+  "lyrics": "",
+  "name": "清水 優心",
+  "number": "10"
+  },
+  {
+  "called": "大谷",
+  "flag": "1",
+  "lyrics": "迷わずに 駆け抜けろ伝説の幕が開けるさあ 気持ち込めて進め狙い定め跳べ！大谷！夢の向こう側へ",
+  "name": "大谷 翔平",
+  "number": "11"
+  },
+  {
+  "called": "松本",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "松本 剛",
+  "number": "12"
+  },
+  {
+  "called": "石井",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "石井 裕也",
+  "number": "13"
+  },
+  {
+  "called": "加藤",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "加藤 貴之",
+  "number": "14"
+  },
+  {
+  "called": "メンディ",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "メンドーサ",
+  "number": "15"
+  },
+  {
+  "called": "有原",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "有原 航平",
+  "number": "16"
+  },
+  {
+  "called": "浦野",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "浦野 博司",
+  "number": "17"
+  },
+  {
+  "called": "佑樹",
+  "flag": "3",
+  "lyrics": "",
+  "name": "斎藤 佑樹",
+  "number": "18"
+  },
+  {
+  "called": "増井",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "増井 浩俊",
+  "number": "19"
+  },
+  {
+  "called": "上原",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "上原 健太",
+  "number": "20"
+  },
+  {
+  "called": "武田",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "武田 久",
+  "number": "21"
+  },
+  {
+  "called": "渡邉",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "渡邉 諒",
+  "number": "23"
+  },
+  {
+  "called": "森本",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "森本 龍弥",
+  "number": "24"
+  },
+  {
+  "called": "宮西",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "宮西 尚生",
+  "number": "25"
+  },
+  {
+  "called": "淺間",
+  "flag": "1",
+  "lyrics": "シャープに決めるバッティング風斬るスピードと敵を仕留める強肩で勝ちへと繋げ",
+  "name": "淺間 大基",
+  "number": "26"
+  },
+  {
+  "called": "大野",
+  "flag": "1",
+  "lyrics": "守りの要夢見たこの場所でチームを背負い更なる高み目指せ",
+  "name": "大野 奨太",
+  "number": "27"
+  },
+  {
+  "called": "新垣",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "新垣 勇人",
+  "number": "28"
+  },
+  {
+  "called": "井口",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "井口 和朋",
+  "number": "29"
+  },
+  {
+  "called": "鍵谷",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "鍵谷 陽平",
+  "number": "30"
+  },
+  {
+  "called": "岡大海",
+  "flag": "1",
+  "lyrics": "駆け抜けろ緑の海原をGO！大海羽ばたけ栄光の空へ",
+  "name": "岡 大海",
+  "number": "31"
+  },
+  {
+  "called": "大累",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "大累 進",
+  "number": "32"
+  },
+  {
+  "called": "須永",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "須永 英輝",
+  "number": "33"
+  },
+  {
+  "called": "吉川",
+  "flag": "3",
+  "lyrics": "",
+  "name": "吉川 光夫",
+  "number": "34"
+  },
+  {
+  "called": "榎下",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "榎下 陽大",
+  "number": "35"
+  },
+  {
+  "called": "中村",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "中村 勝",
+  "number": "36"
+  },
+  {
+  "called": "謙次",
+  "flag": "1",
+  "lyrics": "熱き夢を胸に嵐を起こせ会心の一撃で男を上げろ",
+  "name": "矢野 謙次",
+  "number": "37"
+  },
+  {
+  "called": "武田",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "武田 勝",
+  "number": "38"
+  },
+  {
+  "called": "高梨",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "高梨 裕稔",
+  "number": "39"
+  },
+  {
+  "called": "金平",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "金平 将至",
+  "number": "40"
+  },
+  {
+  "called": "白村",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "白村 明弘",
+  "number": "43"
+  },
+  {
+  "called": "平沼",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "平沼 翔太",
+  "number": "45"
+  },
+  {
+  "called": "瀬川",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "瀬川 隼郎",
+  "number": "46"
+  },
+  {
+  "called": "田中",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "田中 豊樹",
+  "number": "47"
+  },
+  {
+  "called": "谷元",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "谷元 圭介",
+  "number": "48"
+  },
+  {
+  "called": "慎吾",
+  "flag": "1",
+  "lyrics": "気持ちを高めて打て！勝利の道へさあ前だけを見て駆け上がれ慎吾",
+  "name": "石川 慎吾",
+  "number": "49"
+  },
+  {
+  "called": "宇佐美",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "宇佐美 塁大",
+  "number": "50"
+  },
+  {
+  "called": "石川",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "石川 直也",
+  "number": "51"
+  },
+  {
+  "called": "バース",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "バース",
+  "number": "52"
+  },
+  {
+  "called": "立田",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "立田 将太",
+  "number": "53"
+  },
+  {
+  "called": "大塚",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "大塚 豊",
+  "number": "54"
+  },
+  {
+  "called": "マーティン",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "マーティン",
+  "number": "55"
+  },
+  {
+  "called": "市川",
+  "flag": "1",
+  "lyrics": "培った技で攻守に輝き勝利への道標今描け市川",
+  "name": "市川 友也",
+  "number": "56"
+  },
+  {
+  "called": "屋宜",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "屋宜 照悟",
+  "number": "57"
+  },
+  {
+  "called": "横尾",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "横尾 俊健",
+  "number": "58"
+  },
+  {
+  "called": "吉田",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "吉田 侑樹",
+  "number": "59"
+  },
+  {
+  "called": "荒張",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "荒張 裕司",
+  "number": "60"
+  },
+  {
+  "called": "姫野",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "姫野 優也",
+  "number": "61"
+  },
+  {
+  "called": "高濱",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "高濱 祐仁",
+  "number": "62"
+  },
+  {
+  "called": "上沢",
+  "flag": "3",
+  "lyrics": "　",
+  "name": "上沢 直之",
+  "number": "63"
+  },
+  {
+  "called": "谷口",
+  "flag": "1",
+  "lyrics": "尽き果てぬ想い一振りに託し止めどなく闘う男谷口雄也",
+  "name": "谷口 雄也",
+  "number": "64"
+  },
+  {
+  "called": "太田",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "太田 賢吾",
+  "number": "65"
+  },
+  {
+  "called": "大嶋",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "大嶋 匠",
+  "number": "66"
+  },
+  {
+  "called": "岸里",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "岸里 亮佑",
+  "number": "67"
+  },
+  {
+  "called": "石川",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "石川 亮",
+  "number": "68"
+  },
+  {
+  "called": "米野",
+  "flag": "2",
+  "lyrics": "　",
+  "name": "米野 智人",
+  "number": "70"
+  }
+  ]

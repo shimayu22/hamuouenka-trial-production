@@ -13,6 +13,7 @@ class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource
     
     //let idList = ["BO1", "BO2", "BO3","BO4","BO5","BO6","BO7","BO8","BO9"]
     //let idList = ["BO1", "BO1", "BO1","BO1","BO1","BO1","BO1","BO1","BO1"]
+    let idList = ["1番","2番","3番","4番","5番","6番","7番","8番","9番"]
     
     var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]//スタメン9人分の配列を用意をする
     var playerJsonData:[String:[String]] = [:]//辞書型の用意をする

@@ -23,8 +23,8 @@
 		611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */; };
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
-		61A454351D2FB54500CC714E /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 61A454341D2FB54500CC714E /* player.json */; };
 		61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */; };
+		D2864E5E1E6E7FE100D272CC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = D2864E5D1E6E7FE100D272CC /* player.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +46,8 @@
 		611D31921D2F451F007BF6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		61A454341D2FB54500CC714E /* player.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; name = player.json; path = ../../../Dropbox/player.json; sourceTree = "<group>"; };
 		61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		D2864E5D1E6E7FE100D272CC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
 				6198955D1DCF4D41008595CE /* SwiftyJSON.swift */,
-				61A454341D2FB54500CC714E /* player.json */,
+				D2864E5D1E6E7FE100D272CC /* player.json */,
 			);
 			path = hamuouenka;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 				TargetAttributes = {
 					611D31821D2F451E007BF6B8 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3DAAYRJPEY;
+						DevelopmentTeam = Y48P6SY25X;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -164,7 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61A454351D2FB54500CC714E /* player.json in Resources */,
+				D2864E5E1E6E7FE100D272CC /* player.json in Resources */,
 				611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */,
 				611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */,
 				611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */,
@@ -311,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3DAAYRJPEY;
+				DEVELOPMENT_TEAM = Y48P6SY25X;
 				INFOPLIST_FILE = hamuouenka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3DAAYRJPEY;
+				DEVELOPMENT_TEAM = Y48P6SY25X;
 				INFOPLIST_FILE = hamuouenka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
