@@ -33,8 +33,6 @@ class PlayerSelectViewController: UIViewController {
     @IBOutlet weak var Enter: UIButton!
     @IBOutlet weak var Back: UIButton!
     
-    
-    
     @IBAction func clear(_ sender:AnyObject){
         
         Enter.isEnabled = false;

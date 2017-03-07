@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         //背番号:[背番号:名前:歌詞:呼び方:歌詞フラグ]の形で全選手分読み込む
         for _ in json{
             playerJsonData[json[index]["number"].string!] = [json[index]["number"].string!,json[index]["name"].string!,json[index]["lyrics"].string!,json[index]["called"].string!,json[index]["flag"].string!]
-            index = index + 1
+            index += 1
         }
     }
     
