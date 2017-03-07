@@ -189,6 +189,7 @@ class PlayerSelectViewController: UIViewController {
     
     @IBOutlet weak var Border: UILabel!
     
+    
     //次の画面へデータを送る処理
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let playerselectviewController = segue.destination as! DisplayViewController

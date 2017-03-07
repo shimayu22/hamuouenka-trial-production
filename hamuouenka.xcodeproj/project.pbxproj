@@ -7,15 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6116CBB51D8405E900A531FC /* BattingOrder1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBB41D8405E900A531FC /* BattingOrder1.swift */; };
-		6116CBB71D8408F500A531FC /* BattingOrder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBB61D8408F500A531FC /* BattingOrder2.swift */; };
-		6116CBB91D84090500A531FC /* BattingOrder3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBB81D84090500A531FC /* BattingOrder3.swift */; };
-		6116CBBB1D84091200A531FC /* BattingOrder4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBBA1D84091200A531FC /* BattingOrder4.swift */; };
-		6116CBBD1D84091C00A531FC /* BattingOrder5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBBC1D84091C00A531FC /* BattingOrder5.swift */; };
-		6116CBBF1D84092600A531FC /* BattingOrder6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBBE1D84092600A531FC /* BattingOrder6.swift */; };
-		6116CBC11D84093000A531FC /* BattingOrder7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBC01D84093000A531FC /* BattingOrder7.swift */; };
-		6116CBC31D84093C00A531FC /* BattingOrder8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBC21D84093C00A531FC /* BattingOrder8.swift */; };
-		6116CBC51D84094700A531FC /* BattingOrder9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBC41D84094700A531FC /* BattingOrder9.swift */; };
+		6116CBB51D8405E900A531FC /* BattingOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBB41D8405E900A531FC /* BattingOrder.swift */; };
 		611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D31861D2F451F007BF6B8 /* AppDelegate.swift */; };
 		611D31891D2F451F007BF6B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D31881D2F451F007BF6B8 /* ViewController.swift */; };
 		611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318A1D2F451F007BF6B8 /* Main.storyboard */; };
@@ -25,18 +17,11 @@
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */; };
 		D2864E5E1E6E7FE100D272CC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = D2864E5D1E6E7FE100D272CC /* player.json */; };
+		D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2864E5F1E6E8D7600D272CC /* ModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6116CBB41D8405E900A531FC /* BattingOrder1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder1.swift; sourceTree = "<group>"; };
-		6116CBB61D8408F500A531FC /* BattingOrder2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder2.swift; sourceTree = "<group>"; };
-		6116CBB81D84090500A531FC /* BattingOrder3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder3.swift; sourceTree = "<group>"; };
-		6116CBBA1D84091200A531FC /* BattingOrder4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder4.swift; sourceTree = "<group>"; };
-		6116CBBC1D84091C00A531FC /* BattingOrder5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder5.swift; sourceTree = "<group>"; };
-		6116CBBE1D84092600A531FC /* BattingOrder6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder6.swift; sourceTree = "<group>"; };
-		6116CBC01D84093000A531FC /* BattingOrder7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder7.swift; sourceTree = "<group>"; };
-		6116CBC21D84093C00A531FC /* BattingOrder8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder8.swift; sourceTree = "<group>"; };
-		6116CBC41D84094700A531FC /* BattingOrder9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder9.swift; sourceTree = "<group>"; };
+		6116CBB41D8405E900A531FC /* BattingOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder.swift; sourceTree = "<group>"; };
 		611D31831D2F451E007BF6B8 /* hamuouenka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hamuouenka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611D31861D2F451F007BF6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611D31881D2F451F007BF6B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +33,7 @@
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		D2864E5D1E6E7FE100D272CC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		D2864E5F1E6E8D7600D272CC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,15 +71,8 @@
 				611D31881D2F451F007BF6B8 /* ViewController.swift */,
 				6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */,
 				61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */,
-				6116CBB41D8405E900A531FC /* BattingOrder1.swift */,
-				6116CBB61D8408F500A531FC /* BattingOrder2.swift */,
-				6116CBB81D84090500A531FC /* BattingOrder3.swift */,
-				6116CBBA1D84091200A531FC /* BattingOrder4.swift */,
-				6116CBBC1D84091C00A531FC /* BattingOrder5.swift */,
-				6116CBBE1D84092600A531FC /* BattingOrder6.swift */,
-				6116CBC01D84093000A531FC /* BattingOrder7.swift */,
-				6116CBC21D84093C00A531FC /* BattingOrder8.swift */,
-				6116CBC41D84094700A531FC /* BattingOrder9.swift */,
+				D2864E5F1E6E8D7600D272CC /* ModelController.swift */,
+				6116CBB41D8405E900A531FC /* BattingOrder.swift */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
@@ -178,19 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6116CBBB1D84091200A531FC /* BattingOrder4.swift in Sources */,
-				6116CBC31D84093C00A531FC /* BattingOrder8.swift in Sources */,
-				6116CBB51D8405E900A531FC /* BattingOrder1.swift in Sources */,
+				6116CBB51D8405E900A531FC /* BattingOrder.swift in Sources */,
 				6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */,
 				61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */,
-				6116CBB71D8408F500A531FC /* BattingOrder2.swift in Sources */,
 				611D31891D2F451F007BF6B8 /* ViewController.swift in Sources */,
-				6116CBC11D84093000A531FC /* BattingOrder7.swift in Sources */,
-				6116CBC51D84094700A531FC /* BattingOrder9.swift in Sources */,
-				6116CBBD1D84091C00A531FC /* BattingOrder5.swift in Sources */,
 				6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */,
-				6116CBB91D84090500A531FC /* BattingOrder3.swift in Sources */,
-				6116CBBF1D84092600A531FC /* BattingOrder6.swift in Sources */,
+				D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */,
 				611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +285,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y48P6SY25X;
 				INFOPLIST_FILE = hamuouenka/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shimayu.hamuouenka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,7 +302,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y48P6SY25X;
 				INFOPLIST_FILE = hamuouenka/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shimayu.hamuouenka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
