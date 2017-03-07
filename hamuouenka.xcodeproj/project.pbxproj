@@ -18,6 +18,7 @@
 		61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */; };
 		D2864E5E1E6E7FE100D272CC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = D2864E5D1E6E7FE100D272CC /* player.json */; };
 		D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2864E5F1E6E8D7600D272CC /* ModelController.swift */; };
+		D2864E621E6EB1DE00D272CC /* icon-baseball01.png in Resources */ = {isa = PBXBuildFile; fileRef = D2864E611E6EB1DE00D272CC /* icon-baseball01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		D2864E5D1E6E7FE100D272CC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 		D2864E5F1E6E8D7600D272CC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		D2864E611E6EB1DE00D272CC /* icon-baseball01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-baseball01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */,
 				D2864E5F1E6E8D7600D272CC /* ModelController.swift */,
 				6116CBB41D8405E900A531FC /* BattingOrder.swift */,
+				D2864E611E6EB1DE00D272CC /* icon-baseball01.png */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
@@ -146,6 +149,7 @@
 				D2864E5E1E6E7FE100D272CC /* player.json in Resources */,
 				611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */,
 				611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */,
+				D2864E621E6EB1DE00D272CC /* icon-baseball01.png in Resources */,
 				611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
