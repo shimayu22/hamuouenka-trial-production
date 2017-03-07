@@ -70,12 +70,14 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         //        self.dataSource = self
         
         
+        //以下、よく分からない
         // Do any additional setup after loading the view, typically from a nib.
         // Configure the page view controller and add it as a child view controller.
-        
+        //ページ遷移の設定、めくり方は「.scroll」か.「pageCurl」、方向は「.horizontal」か「.vertical」かになる
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
         
+        //startingViewController:の後に作成するクラス（か、StoryBoard ID？）を指定する
         let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })

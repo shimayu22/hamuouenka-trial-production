@@ -26,10 +26,6 @@ class ViewController: UIViewController {
             playerJsonData[json[index]["number"].string!] = [json[index]["number"].string!,json[index]["name"].string!,json[index]["lyrics"].string!,json[index]["called"].string!,json[index]["flag"].string!]
             index = index + 1
         }
-        
-        print(playerJsonData)
-
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
