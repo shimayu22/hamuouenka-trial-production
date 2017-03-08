@@ -435,15 +435,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2x-cD-1vo">
+                                <rect key="frame" x="137" y="550" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Is-JZ-uWf"/>
+                                    <constraint firstAttribute="width" constant="100" id="t78-JR-WVW"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="csH-n6-eMm" kind="unwind" unwindAction="backToTopWithSegue:" id="Gnm-Qz-6tQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vzf-jT-bPt" firstAttribute="centerX" secondItem="CDP-gq-9JZ" secondAttribute="centerX" id="DXq-ZR-1zZ"/>
                             <constraint firstItem="Vzf-jT-bPt" firstAttribute="top" secondItem="5hg-pm-joK" secondAttribute="bottom" constant="69" id="J2d-gO-Ni1"/>
                             <constraint firstItem="5hg-pm-joK" firstAttribute="centerX" secondItem="CDP-gq-9JZ" secondAttribute="centerX" id="LOf-xo-eqR"/>
+                            <constraint firstItem="aYT-Jt-KJc" firstAttribute="top" secondItem="R2x-cD-1vo" secondAttribute="bottom" constant="67" id="PRp-mk-N40"/>
                             <constraint firstItem="uvi-gD-qBk" firstAttribute="centerX" secondItem="CDP-gq-9JZ" secondAttribute="centerX" id="dcH-79-hfn"/>
                             <constraint firstItem="5hg-pm-joK" firstAttribute="top" secondItem="9sL-gr-TxZ" secondAttribute="bottom" constant="110" id="g9W-24-a9c"/>
                             <constraint firstItem="aYT-Jt-KJc" firstAttribute="top" secondItem="uvi-gD-qBk" secondAttribute="bottom" constant="244" id="gVp-hJ-bHa"/>
+                            <constraint firstItem="R2x-cD-1vo" firstAttribute="centerX" secondItem="CDP-gq-9JZ" secondAttribute="centerX" id="rxz-gC-Ur0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -465,6 +478,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwp-R7-B2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="csH-n6-eMm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1471" y="328"/>
         </scene>

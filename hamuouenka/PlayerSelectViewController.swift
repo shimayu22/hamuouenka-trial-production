@@ -32,19 +32,22 @@ class PlayerSelectViewController: UIViewController {
     @IBOutlet weak var clear: UIButton!
     @IBOutlet weak var Enter: UIButton!
     @IBOutlet weak var Back: UIButton!
+    @IBOutlet weak var debuglabel: UILabel!
+    @IBOutlet weak var Border: UILabel!
     
     @IBAction func clear(_ sender:AnyObject){
+        clearCP(arr: order)
         
-        Enter.isEnabled = false;
-        
-        for(_,element) in order.enumerated(){
-            let tmpButton = self.view.viewWithTag(element) as? UIButton
-            tmpButton?.isEnabled = true;
-        }
-        
-        order.removeAll()
-        Border.text = "1番を選んでください"
-        debuglabel.text = "選手を選択してください"
+//        Enter.isEnabled = false;
+//        
+//        for(_,element) in order.enumerated(){
+//            let tmpButton = self.view.viewWithTag(element) as? UIButton
+//            tmpButton?.isEnabled = true;
+//        }
+//        
+//        order.removeAll()
+//        Border.text = "1番を選んでください"
+//        debuglabel.text = "選手を選択してください"
         
 //        YODAIKAN.isEnabled = true;
 //        SUGIYAKENSHI.isEnabled = true;
@@ -123,69 +126,64 @@ class PlayerSelectViewController: UIViewController {
     }
     
     @IBAction func YODAIKAN(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func SUGIYAKENSHI(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func TANAKAKENSUKE(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func LAIRD(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func NAKATASYO(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func NISHIKAWAHARUKI(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func KONDOKENSUKE(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func NAKASHIMATAKUYA(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func OTANISYOHEI(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func ASAMADAIKI(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func OHNOSYOTA(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func OKAHIROMI(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func ISHIKAWASINGO(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func ICHIKAWATOMOYA(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
     
     @IBAction func TANIGUTCHIYUYA(_ sender:AnyObject){
-        ButtonCP(button: sender as! UIButton)
+        buttonCP(button: sender as! UIButton)
     }
-    
-    
-    @IBOutlet weak var debuglabel: UILabel!
-    
-    @IBOutlet weak var Border: UILabel!
     
     
     //次の画面へデータを送る処理
@@ -197,8 +195,8 @@ class PlayerSelectViewController: UIViewController {
     }
     
     //ボタン共通処理
-    //func ButtonCP(_ number: Int,button:UIButton){
-    func ButtonCP(button:UIButton){
+    //func buttonCP(_ number: Int,button:UIButton){
+    func buttonCP(button:UIButton){
         if order.count < 9{
             order.append(button.tag)
             button.isEnabled = false;
@@ -221,5 +219,25 @@ class PlayerSelectViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
+    //クリア共通処理
+    func clearCP(arr:[Int]){
+        Enter.isEnabled = false;
+        
+        for(_,element) in arr.enumerated(){
+            let tmpButton = self.view.viewWithTag(element) as? UIButton
+            tmpButton?.isEnabled = true;
+        }
+        
+        order.removeAll()
+        Border.text = "1番を選んでください"
+        debuglabel.text = "選手を選択してください"
+    }
+    
+    
+    //戻ってくる時の処理
+    @IBAction func backToTop(segue: UIStoryboardSegue) {
+        clearCP(arr: order)
+    }
     
 }
