@@ -14,6 +14,7 @@ class BattingOrder: UIViewController {
     @IBOutlet weak var battingOrder: UILabel!
     @IBOutlet weak var nameNumber: UILabel!
     @IBOutlet weak var songText: UILabel!
+    @IBOutlet weak var playerChange: UIButton!
     
     
     var bo:String = ""
@@ -42,6 +43,12 @@ class BattingOrder: UIViewController {
         self.nameNumber!.text = name + " :背番号 " + String(number)
         self.songText!.text = sngtxt
     }
+    
+    //交代ボタンの処理
+    @IBAction func playerChange(_ sender: UIButton) {
+        
+    }
+    
     
     
 }

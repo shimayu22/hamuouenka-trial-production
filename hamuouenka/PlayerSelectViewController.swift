@@ -11,7 +11,8 @@ import UIKit
 class PlayerSelectViewController: UIViewController {
     
     
-    var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
+    //var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var order :[Int] = []//スタメンの背番号を保持する
     
     @IBOutlet weak var YODAIKAN: UIButton!
@@ -187,12 +188,12 @@ class PlayerSelectViewController: UIViewController {
     
     
     //次の画面へデータを送る処理
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let playerselectviewController = segue.destination as! DisplayViewController
-        playerselectviewController.order = order
-        playerselectviewController.playerJsonData = playerJsonData
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let playerselectviewController = segue.destination as! DisplayViewController
+//        playerselectviewController.order = order
+//        playerselectviewController.playerJsonData = playerJsonData
+//        
+//    }
     
     //ボタン共通処理
     //func buttonCP(_ number: Int,button:UIButton){
@@ -200,11 +201,13 @@ class PlayerSelectViewController: UIViewController {
         if order.count < 9{
             order.append(button.tag)
             button.isEnabled = false;
+            
             if order.count < 9{
                 Border.text = "\(order.count + 1)番を選んでください"
             }else{
                 Enter.isEnabled = true;
                 Border.text = "決定ボタンを押してください"
+                appDelegate.order = order
             }
         }
         debuglabel.text = String(describing: order)
@@ -230,6 +233,7 @@ class PlayerSelectViewController: UIViewController {
         }
         
         order.removeAll()
+        appDelegate.order = order
         Border.text = "1番を選んでください"
         debuglabel.text = "選手を選択してください"
     }

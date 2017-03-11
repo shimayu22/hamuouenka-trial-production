@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     
     var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //
         let path = Bundle.main.path(forResource: "player",ofType: "json")!
         let jsondata = try! Data(contentsOf: URL(fileURLWithPath: path))
         let json = JSON(data:jsondata)//JSONデータ読み込み
@@ -26,13 +28,18 @@ class ViewController: UIViewController {
             playerJsonData[json[index]["number"].string!] = [json[index]["number"].string!,json[index]["name"].string!,json[index]["lyrics"].string!,json[index]["called"].string!,json[index]["flag"].string!]
             index += 1
         }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let viewController = segue.destination as! PlayerSelectViewController
-        viewController.playerJsonData = playerJsonData
+        
+        //AppDelegateにデータを送る
+        appDelegate.playerJsonData = playerJsonData
         
     }
+    
+    //次の画面にデータを送る処理
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let viewController = segue.destination as! PlayerSelectViewController
+//        viewController.playerJsonData = playerJsonData
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

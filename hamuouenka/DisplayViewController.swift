@@ -22,7 +22,7 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
     //BattingOrder画面で表示するデータの準備
     var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]//スタメン9人分の配列を用意をする
     var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
-    var order :[Int] = []//スタメンの背番号を保持す
+    var order :[Int] = []//スタメンの背番号を保持する
     let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     //let pageView = "BO1"
     
@@ -33,6 +33,8 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //表示用データを作成する処理
+        order = appDelegate.order
+        playerJsonData = appDelegate.playerJsonData
         
         //辞書データからオーダー順に背番号をキーにして要素を取り出す
         //[0][0],[0][1],[0][2],[0][3],[0][4]
