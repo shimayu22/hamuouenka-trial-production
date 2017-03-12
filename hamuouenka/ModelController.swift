@@ -47,6 +47,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         //BattingOrderのdataObjectにラベルに表示する文字列を渡している
         //BattingOrder.dataObject = self.pageData[index]
         BattingOrder.bo = self.pageData[index]
+        BattingOrder.index = index
         let num:String = appDelegate.playerdata[index][0]
         BattingOrder.number = Int(num)!
         BattingOrder.name = appDelegate.playerdata[index][1]

@@ -18,6 +18,7 @@ class BattingOrder: UIViewController {
     
     
     var bo:String = ""
+    var index:Int = 0
     var name: String = ""
     var number:Int = 0
     var sngtxt = ""
@@ -44,11 +45,15 @@ class BattingOrder: UIViewController {
         self.songText!.text = sngtxt
     }
     
-    //交代ボタンの処理
-    @IBAction func playerChange(_ sender: UIButton) {
-        
-    }
+
     
+    //次の画面へデータを送る処理
+//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            let playerselectviewController = segue.destination as! DisplayViewController
+//            playerselectviewController.order = order
+//            playerselectviewController.playerJsonData = playerJsonData
+//    
+//        }
     
     
 }
