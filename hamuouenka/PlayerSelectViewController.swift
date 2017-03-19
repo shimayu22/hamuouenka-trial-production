@@ -244,4 +244,7 @@ class PlayerSelectViewController: UIViewController {
         clearCP(arr: order)
     }
     
+    //選手交代で戻ってきた時の処理
+    
+    
 }
