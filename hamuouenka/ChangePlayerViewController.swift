@@ -12,6 +12,8 @@ class ChangePlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +23,26 @@ class ChangePlayerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var YODAIKAN: UIButton!
+    @IBOutlet weak var SUGIYAKENSHI: UIButton!
+    @IBOutlet weak var TANAKAKENSUKE: UIButton!
+    @IBOutlet weak var LAIRD: UIButton!
+    @IBOutlet weak var NAKATASYO: UIButton!
+    @IBOutlet weak var NISHIKAWAHARUKI: UIButton!
+    @IBOutlet weak var KONDOKENSUKE: UIButton!
+    @IBOutlet weak var NAKASHIMATAKUYA: UIButton!
+    @IBOutlet weak var OTANISYOHEI: UIButton!
+    @IBOutlet weak var ASAMADAIKI: UIButton!
+    @IBOutlet weak var OHNOSYOTA: UIButton!
+    @IBOutlet weak var OKAHIROMI: UIButton!
+    @IBOutlet weak var ISHIKAWASINGO: UIButton!
+    @IBOutlet weak var ICHIKAWATOMOYA: UIButton!
+    @IBOutlet weak var TANIGUCHIYUYA: UIButton!
+    @IBOutlet weak var Enter: UIButton!
+    @IBOutlet weak var Cancel: UIButton!
+    @IBOutlet weak var Back: UIButton!
 
+    
     /*
     // MARK: - Navigation
 

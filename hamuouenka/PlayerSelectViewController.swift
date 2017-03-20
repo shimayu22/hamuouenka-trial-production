@@ -242,9 +242,8 @@ class PlayerSelectViewController: UIViewController {
     //戻ってくる時の処理
     @IBAction func backToTop(segue: UIStoryboardSegue) {
         clearCP(arr: order)
+        appDelegate.participatedPlayer.removeAll()
     }
-    
-    //選手交代で戻ってきた時の処理
     
     
 }
