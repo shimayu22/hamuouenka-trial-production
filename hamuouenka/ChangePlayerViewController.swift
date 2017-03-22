@@ -9,10 +9,21 @@
 import UIKit
 
 class ChangePlayerViewController: UIViewController {
+    
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    var index = 0
+    var pP :[Int] = [1,2,3,4,5,6,7,8,9]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //pP = appDelegate.participatedPlayer
         
+        for _ in  pP{
+            let tag:Int = pP[index]
+            let tmpButton = self.view.viewWithTag(tag) as? UIButton
+            tmpButton?.isEnabled = true;
+            
+        }
         
 
         // Do any additional setup after loading the view.

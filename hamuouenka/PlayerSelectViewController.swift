@@ -208,6 +208,7 @@ class PlayerSelectViewController: UIViewController {
                 Enter.isEnabled = true;
                 Border.text = "決定ボタンを押してください"
                 appDelegate.order = order
+                appDelegate.participatedPlayer = order
             }
         }
         debuglabel.text = String(describing: order)

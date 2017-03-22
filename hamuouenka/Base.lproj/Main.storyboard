@@ -474,6 +474,7 @@
                     </view>
                     <connections>
                         <outlet property="battingOrder" destination="5hg-pm-joK" id="hY2-Un-5mJ"/>
+                        <outlet property="changePlayer" destination="1Qi-xa-Lt1" id="Cqg-d1-jig"/>
                         <outlet property="nameNumber" destination="Vzf-jT-bPt" id="DKo-FB-fzr"/>
                         <outlet property="songText" destination="uvi-gD-qBk" id="j2f-eL-NNY"/>
                     </connections>
@@ -793,6 +794,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="efg-Da-Jci"/>
+        <segue reference="wNr-Mk-pBb"/>
     </inferredMetricsTieBreakers>
 </document>

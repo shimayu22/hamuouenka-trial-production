@@ -15,6 +15,7 @@ class BattingOrder: UIViewController {
     @IBOutlet weak var nameNumber: UILabel!
     @IBOutlet weak var songText: UILabel!
     @IBOutlet weak var changePlayerButton: UIButton!
+    @IBOutlet weak var changePlayer: UIButton!
 
     
     var bo:String = ""
