@@ -442,7 +442,7 @@
                                 </constraints>
                                 <state key="normal" title="交代"/>
                                 <connections>
-                                    <segue destination="iDi-pb-owA" kind="show" id="kpm-gg-g3I"/>
+                                    <segue destination="iDi-pb-owA" kind="show" id="tdT-aP-QpM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -474,7 +474,6 @@
                     </view>
                     <connections>
                         <outlet property="battingOrder" destination="5hg-pm-joK" id="hY2-Un-5mJ"/>
-                        <outlet property="changePlayer" destination="1Qi-xa-Lt1" id="Cqg-d1-jig"/>
                         <outlet property="nameNumber" destination="Vzf-jT-bPt" id="DKo-FB-fzr"/>
                         <outlet property="songText" destination="uvi-gD-qBk" id="j2f-eL-NNY"/>
                     </connections>
@@ -513,9 +512,6 @@
                                     <constraint firstAttribute="height" constant="50" id="rqU-h2-s1s"/>
                                 </constraints>
                                 <state key="normal" title="決定"/>
-                                <connections>
-                                    <segue destination="3Lr-H0-Lzd" kind="show" id="a7g-Jz-Kax"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCj-qk-yEt">
                                 <rect key="frame" x="47" y="490" width="281" height="38"/>
@@ -534,9 +530,6 @@
                                     <constraint firstAttribute="height" constant="50" id="DWF-Nv-XI8"/>
                                 </constraints>
                                 <state key="normal" title="陽岱鋼"/>
-                                <connections>
-                                    <action selector="YODAIKAN:" destination="iDi-pb-owA" eventType="touchUpInside" id="qh5-Ez-AnL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0f-K9-xZU">
                                 <rect key="frame" x="30" y="160" width="80" height="50"/>
@@ -545,9 +538,6 @@
                                     <constraint firstAttribute="width" constant="80" id="SBa-qi-rvt"/>
                                 </constraints>
                                 <state key="normal" title="レアード"/>
-                                <connections>
-                                    <action selector="LAIRD:" destination="iDi-pb-owA" eventType="touchUpInside" id="nFF-xQ-OEt"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg0-dC-Y7O">
                                 <rect key="frame" x="264" y="160" width="80" height="50"/>
@@ -556,9 +546,6 @@
                                     <constraint firstAttribute="width" constant="80" id="CTH-31-cZ3"/>
                                 </constraints>
                                 <state key="normal" title="西川遥輝"/>
-                                <connections>
-                                    <action selector="NISHIKAWAHARUKI:" destination="iDi-pb-owA" eventType="touchUpInside" id="qvw-y0-q3Y"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-zS-727">
                                 <rect key="frame" x="30" y="230" width="80" height="50"/>
@@ -567,9 +554,6 @@
                                     <constraint firstAttribute="width" constant="80" id="T3w-1q-pW2"/>
                                 </constraints>
                                 <state key="normal" title="近藤健介"/>
-                                <connections>
-                                    <action selector="KONDOKENSUKE:" destination="iDi-pb-owA" eventType="touchUpInside" id="D81-hJ-gon"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-nH-BeI">
                                 <rect key="frame" x="264" y="230" width="80" height="50"/>
@@ -578,9 +562,6 @@
                                     <constraint firstAttribute="width" constant="80" id="g6c-rS-Xhh"/>
                                 </constraints>
                                 <state key="normal" title="大谷翔平"/>
-                                <connections>
-                                    <action selector="OTANISYOHEI:" destination="iDi-pb-owA" eventType="touchUpInside" id="qCH-nT-X2Z"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-SN-7my">
                                 <rect key="frame" x="147" y="90" width="80" height="50"/>
@@ -589,9 +570,6 @@
                                     <constraint firstAttribute="height" constant="50" id="WYy-dE-3zp"/>
                                 </constraints>
                                 <state key="normal" title="杉谷拳士"/>
-                                <connections>
-                                    <action selector="SUGIYAKENSHI:" destination="iDi-pb-owA" eventType="touchUpInside" id="jdI-g1-ucm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-Fl-TUS">
                                 <rect key="frame" x="30" y="300" width="80" height="50"/>
@@ -600,9 +578,6 @@
                                     <constraint firstAttribute="height" constant="50" id="Zn5-1d-Rc6"/>
                                 </constraints>
                                 <state key="normal" title="淺間大基"/>
-                                <connections>
-                                    <action selector="ASAMADAIKI:" destination="iDi-pb-owA" eventType="touchUpInside" id="30U-tu-1Cw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOi-tc-mnX">
                                 <rect key="frame" x="264" y="300" width="80" height="50"/>
@@ -611,9 +586,6 @@
                                     <constraint firstAttribute="height" constant="50" id="dWa-qS-OjJ"/>
                                 </constraints>
                                 <state key="normal" title="岡大海"/>
-                                <connections>
-                                    <action selector="OKAHIROMI:" destination="iDi-pb-owA" eventType="touchUpInside" id="mjL-7b-baw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La9-en-EJT">
                                 <rect key="frame" x="30" y="370" width="80" height="50"/>
@@ -622,9 +594,6 @@
                                     <constraint firstAttribute="height" constant="50" id="mfR-vP-OeY"/>
                                 </constraints>
                                 <state key="normal" title="石川慎吾"/>
-                                <connections>
-                                    <action selector="ISHIKAWASINGO:" destination="iDi-pb-owA" eventType="touchUpInside" id="oAX-9o-RHh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xec-ba-fHD">
                                 <rect key="frame" x="147" y="370" width="80" height="50"/>
@@ -633,9 +602,6 @@
                                     <constraint firstAttribute="width" constant="80" id="rmA-rd-gWY"/>
                                 </constraints>
                                 <state key="normal" title="市川友也"/>
-                                <connections>
-                                    <action selector="ICHIKAWATOMOYA:" destination="iDi-pb-owA" eventType="touchUpInside" id="fKS-RK-wMB"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heb-Gv-p4w">
                                 <rect key="frame" x="264" y="370" width="80" height="50"/>
@@ -644,9 +610,6 @@
                                     <constraint firstAttribute="width" constant="80" id="UgE-GP-hiz"/>
                                 </constraints>
                                 <state key="normal" title="谷口雄也"/>
-                                <connections>
-                                    <action selector="TANIGUTCHIYUYA:" destination="iDi-pb-owA" eventType="touchUpInside" id="2aj-Dr-tLu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-Dc-yn6">
                                 <rect key="frame" x="147" y="300" width="80" height="50"/>
@@ -655,9 +618,6 @@
                                     <constraint firstAttribute="width" constant="80" id="e6B-Sk-DdU"/>
                                 </constraints>
                                 <state key="normal" title="大野奨太"/>
-                                <connections>
-                                    <action selector="OHNOSYOTA:" destination="iDi-pb-owA" eventType="touchUpInside" id="VE8-Id-rfT"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsq-n6-mze">
                                 <rect key="frame" x="147" y="230" width="80" height="50"/>
@@ -666,9 +626,6 @@
                                     <constraint firstAttribute="height" constant="50" id="cSQ-fZ-lPO"/>
                                 </constraints>
                                 <state key="normal" title="中島卓也"/>
-                                <connections>
-                                    <action selector="NAKASHIMATAKUYA:" destination="iDi-pb-owA" eventType="touchUpInside" id="Lv6-uh-mHQ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buG-sN-oY3">
                                 <rect key="frame" x="147" y="160" width="80" height="50"/>
@@ -677,9 +634,6 @@
                                     <constraint firstAttribute="width" constant="80" id="iKx-fc-UqP"/>
                                 </constraints>
                                 <state key="normal" title="中田翔"/>
-                                <connections>
-                                    <action selector="NAKATASYO:" destination="iDi-pb-owA" eventType="touchUpInside" id="do6-Mj-8eT"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6N-6C-8cD">
                                 <rect key="frame" x="260" y="550" width="100" height="50"/>
@@ -688,9 +642,6 @@
                                     <constraint firstAttribute="height" constant="50" id="yqR-AE-KGx"/>
                                 </constraints>
                                 <state key="normal" title="取り消す"/>
-                                <connections>
-                                    <action selector="Back:" destination="iDi-pb-owA" eventType="touchUpInside" id="X5b-ww-aeN"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-CW-yqg">
                                 <rect key="frame" x="16" y="550" width="100" height="50"/>
@@ -699,10 +650,6 @@
                                     <constraint firstAttribute="height" constant="50" id="T8r-Yv-BCO"/>
                                 </constraints>
                                 <state key="normal" title="キャンセル"/>
-                                <connections>
-                                    <action selector="clear:" destination="iDi-pb-owA" eventType="touchUpInside" id="545-PG-MOh"/>
-                                    <segue destination="3Lr-H0-Lzd" kind="show" id="efg-Da-Jci"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61N-Rj-Ady">
                                 <rect key="frame" x="264" y="90" width="80" height="50"/>
@@ -711,9 +658,6 @@
                                     <constraint firstAttribute="width" constant="80" id="VKk-fC-TLe"/>
                                 </constraints>
                                 <state key="normal" title="田中賢介"/>
-                                <connections>
-                                    <action selector="TANAKAKENSUKE:" destination="iDi-pb-owA" eventType="touchUpInside" id="QIo-ho-vt6"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -763,37 +707,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1ei-QL-QJb"/>
-                    <connections>
-                        <outlet property="ASAMADAIKI" destination="2B9-Fl-TUS" id="L4q-YI-xTz"/>
-                        <outlet property="Back" destination="Z6N-6C-8cD" id="8OW-31-mYA"/>
-                        <outlet property="Border" destination="kPJ-Tk-Zs1" id="ngl-pj-YBM"/>
-                        <outlet property="Cancel" destination="r0r-CW-yqg" id="wWp-lS-MaW"/>
-                        <outlet property="Enter" destination="S6U-p2-VFu" id="JbC-HU-GmJ"/>
-                        <outlet property="ICHIKAWATOMOYA" destination="xec-ba-fHD" id="lxo-3X-99o"/>
-                        <outlet property="ISHIKAWASINGO" destination="La9-en-EJT" id="jla-Jt-c4V"/>
-                        <outlet property="KONDOKENSUKE" destination="w4C-zS-727" id="DUY-5f-OYc"/>
-                        <outlet property="LAIRD" destination="B0f-K9-xZU" id="qLW-oh-iJ3"/>
-                        <outlet property="NAKASHIMATAKUYA" destination="Zsq-n6-mze" id="Poa-Va-Zpv"/>
-                        <outlet property="NAKATASYO" destination="buG-sN-oY3" id="pPM-l8-llx"/>
-                        <outlet property="NISHIKAWAHARUKI" destination="cg0-dC-Y7O" id="p5C-VR-qxw"/>
-                        <outlet property="OHNOSYOTA" destination="TQR-Dc-yn6" id="a0O-2r-erz"/>
-                        <outlet property="OKAHIROMI" destination="YOi-tc-mnX" id="3tF-i9-Eop"/>
-                        <outlet property="OTANISYOHEI" destination="EGG-nH-BeI" id="eHg-gt-V4w"/>
-                        <outlet property="SUGIYAKENSHI" destination="qvd-SN-7my" id="VGx-ya-NhC"/>
-                        <outlet property="TANAKAKENSUKE" destination="61N-Rj-Ady" id="isQ-WL-FQ6"/>
-                        <outlet property="TANIGUCHIYUYA" destination="heb-Gv-p4w" id="wbB-cI-whl"/>
-                        <outlet property="YODAIKAN" destination="65c-VF-Le7" id="skz-4z-DHs"/>
-                        <outlet property="back" destination="Z6N-6C-8cD" id="MEg-lp-uUa"/>
-                        <outlet property="clear" destination="r0r-CW-yqg" id="Dow-Qr-XF5"/>
-                        <outlet property="debuglabel" destination="pCj-qk-yEt" id="BZD-Tv-MVR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOz-Qn-sib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="527"/>
+            <point key="canvasLocation" x="1839" y="957"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="wNr-Mk-pBb"/>
-    </inferredMetricsTieBreakers>
 </document>

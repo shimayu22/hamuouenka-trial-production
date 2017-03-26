@@ -47,9 +47,9 @@ class BattingOrder: UIViewController {
 
     }
     
-    @IBAction func changePlayerButton(_ sender:AnyObject){
-        
-    }
+//    @IBAction func changePlayerButton(_ sender:AnyObject){
+//        
+//    }
 
     
     //次の画面へデータを送る処理
