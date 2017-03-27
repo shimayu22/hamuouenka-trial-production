@@ -707,6 +707,26 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1ei-QL-QJb"/>
+                    <connections>
+                        <outlet property="ASAMADAIKI" destination="2B9-Fl-TUS" id="OUo-3M-mV5"/>
+                        <outlet property="Back" destination="Z6N-6C-8cD" id="3hp-wU-MKE"/>
+                        <outlet property="Cancel" destination="r0r-CW-yqg" id="Guo-vx-CGH"/>
+                        <outlet property="Enter" destination="S6U-p2-VFu" id="2LP-vk-jBq"/>
+                        <outlet property="ICHIKAWATOMOYA" destination="xec-ba-fHD" id="SKa-SV-xb0"/>
+                        <outlet property="ISHIKAWASINGO" destination="La9-en-EJT" id="NZG-fy-lE7"/>
+                        <outlet property="KONDOKENSUKE" destination="w4C-zS-727" id="759-us-uHL"/>
+                        <outlet property="LAIRD" destination="B0f-K9-xZU" id="fe8-Zo-rvG"/>
+                        <outlet property="NAKASHIMATAKUYA" destination="Zsq-n6-mze" id="HxJ-yl-s9L"/>
+                        <outlet property="NAKATASYO" destination="buG-sN-oY3" id="dTc-WQ-eF2"/>
+                        <outlet property="NISHIKAWAHARUKI" destination="cg0-dC-Y7O" id="tBb-kX-9Dk"/>
+                        <outlet property="OHNOSYOTA" destination="TQR-Dc-yn6" id="ZIW-VY-Y32"/>
+                        <outlet property="OKAHIROMI" destination="YOi-tc-mnX" id="nZu-Gd-FWG"/>
+                        <outlet property="OTANISYOHEI" destination="EGG-nH-BeI" id="3hQ-J2-SFL"/>
+                        <outlet property="SUGIYAKENSHI" destination="qvd-SN-7my" id="e7M-QL-R9O"/>
+                        <outlet property="TANAKAKENSUKE" destination="61N-Rj-Ady" id="tMq-ZO-aGz"/>
+                        <outlet property="TANIGUCHIYUYA" destination="heb-Gv-p4w" id="6wl-LF-qJh"/>
+                        <outlet property="YODAIKAN" destination="65c-VF-Le7" id="EkD-IZ-1pS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOz-Qn-sib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
