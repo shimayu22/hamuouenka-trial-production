@@ -17,6 +17,7 @@
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */; };
+		61D150421F3C2C0500CC89C3 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D150411F3C2C0500CC89C3 /* PlayerData.swift */; };
 		D2864E5E1E6E7FE100D272CC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = D2864E5D1E6E7FE100D272CC /* player.json */; };
 		D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2864E5F1E6E8D7600D272CC /* ModelController.swift */; };
 		D2864E621E6EB1DE00D272CC /* icon-baseball01.png in Resources */ = {isa = PBXBuildFile; fileRef = D2864E611E6EB1DE00D272CC /* icon-baseball01.png */; };
@@ -35,6 +36,7 @@
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		61D150411F3C2C0500CC89C3 /* PlayerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		D2864E5D1E6E7FE100D272CC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 		D2864E5F1E6E8D7600D272CC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		D2864E611E6EB1DE00D272CC /* icon-baseball01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-baseball01.png"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				611D31921D2F451F007BF6B8 /* Info.plist */,
 				6198955D1DCF4D41008595CE /* SwiftyJSON.swift */,
 				D2864E5D1E6E7FE100D272CC /* player.json */,
+				61D150411F3C2C0500CC89C3 /* PlayerData.swift */,
 			);
 			path = hamuouenka;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */,
 				611D31891D2F451F007BF6B8 /* ViewController.swift in Sources */,
 				6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */,
+				61D150421F3C2C0500CC89C3 /* PlayerData.swift in Sources */,
 				D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */,
 				611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */,
 			);
