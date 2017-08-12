@@ -158,6 +158,8 @@ class PlayerSelectViewController: UIViewController {
     @IBAction func backToTop(segue: UIStoryboardSegue) {
         clearCP(arr: order)
         retainData.participatedPlayer.removeAll()
+        retainData.order.removeAll()
+        retainData.playerData.removeAll()
     }
     
     
