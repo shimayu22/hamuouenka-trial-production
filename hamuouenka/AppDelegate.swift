@@ -13,18 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    //全選手のJSONデータ
-    var playerJsonData:[String:[String]] = [:]
-    
-    //選手データ追加分
-    var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]
-
-    //オーダーを保存する
-    var order :[Int] = []
-    
-    //出場選手を保存する（スタメン＋交代）
-    var participatedPlayer :[Int] = []
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

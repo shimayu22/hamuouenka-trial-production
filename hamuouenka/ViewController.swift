@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
-    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    var playerJsonData:[Int:[String]] = [:]//辞書型の用意をする
+    var retainData:RetainData = RetainData.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
+
         let path = Bundle.main.path(forResource: "player",ofType: "json")!
         let jsondata = try! Data(contentsOf: URL(fileURLWithPath: path))
         let json = JSON(data:jsondata)//JSONデータ読み込み
@@ -23,32 +23,24 @@ class ViewController: UIViewController {
         var index = 0//JSONを辞書型にする時に使うカウンタ
 
         //読み込んだJSONデータを辞書型にする
-        //背番号:[背番号:名前:歌詞:呼び方:歌詞フラグ]の形で全選手分読み込む
+        //背番号:[背番号:名前:呼び方:歌詞フラグ:歌詞]の形で全選手分読み込む
         for _ in json{
-            playerJsonData[json[index]["number"].string!] = [json[index]["number"].string!,json[index]["name"].string!,json[index]["lyrics"].string!,json[index]["called"].string!,json[index]["flag"].string!]
+            playerJsonData[json[index]["number"].int!] = [json[index]["number"].stringValue,
+                                                          json[index]["name"].stringValue,
+                                                          json[index]["called"].stringValue,
+                                                          json[index]["flag"].stringValue,
+                                                          json[index]["lyrics"].stringValue]
             index += 1
         }
         
-        //AppDelegateにデータを送る
-        appDelegate.playerJsonData = playerJsonData
+        //retainDataにデータを送る
+        retainData.playerJsonData = playerJsonData
         
     }
-    
-    //次の画面にデータを送る処理
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let viewController = segue.destination as! PlayerSelectViewController
-//        viewController.playerJsonData = playerJsonData
-//        
-//    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-    
-    
-
 }
 

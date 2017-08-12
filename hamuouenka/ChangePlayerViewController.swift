@@ -10,7 +10,7 @@ import UIKit
 
 class ChangePlayerViewController: UIViewController {
     
-    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    var retainData:RetainData = RetainData.sharedInstance
     var index = 0
     var pP :[Int] = []
     
@@ -35,7 +35,7 @@ class ChangePlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        pP = appDelegate.participatedPlayer
+        pP = retainData.participatedPlayer
         
         for _ in  pP{
             let tag:Int = pP[index]
@@ -43,24 +43,11 @@ class ChangePlayerViewController: UIViewController {
             tmpButton?.isEnabled = false
             index += 1
         }
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

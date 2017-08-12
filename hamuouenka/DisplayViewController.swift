@@ -9,22 +9,9 @@
 
 import UIKit
 
-
-
 class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
-    
-    //class DisplayViewController: UIPageViewController,UIPageViewControllerDataSource {
-    
-    //let idList = ["BO1", "BO2", "BO3","BO4","BO5","BO6","BO7","BO8","BO9"]
-    //let idList = ["BO1", "BO1", "BO1","BO1","BO1","BO1","BO1","BO1","BO1"]
-    //let idList = ["1番","2番","3番","4番","5番","6番","7番","8番","9番"]
-    
-    //BattingOrder画面で表示するデータの準備
-    var playerdata :[[String]] = [[],[],[],[],[],[],[],[],[]]//スタメン9人分の配列を用意をする
-    var playerJsonData:[String:[String]] = [:]//辞書型の用意をする
-    var order :[Int] = []//スタメンの背番号を保持する
-    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    //let pageView = "BO1"
+
+    var retainData:RetainData = RetainData.sharedInstance
     
     //PageViewControllerのデータの準備
     var pageViewController: UIPageViewController?
@@ -32,47 +19,22 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
     //最初からあるメソッド
     override func viewDidLoad() {
         super.viewDidLoad()
-        //表示用データを作成する処理
-        order = appDelegate.order
-        playerJsonData = appDelegate.playerJsonData
-        
-        //辞書データからオーダー順に背番号をキーにして要素を取り出す
-        //[0][0],[0][1],[0][2],[0][3],[0][4]
-        //[1][0],[1][1],[1][2],[1][3],[1][4]
-        //・
-        //・
-        //・
-        //[8][0],[8][1],[8][2],[8][3],[8][4]
-        //背番号,名前,歌詞,呼び方,フラグ
-        for orderIndex in 0...8 {
-            let numString:String = String(order[orderIndex])
-            if let Array = (playerJsonData[numString]){
-                playerdata[orderIndex] = Array
-                //                print("---------DVC-----------")
-                //                print(orderIndex + 1)
-                //                print(playerdata[orderIndex][0])
-                //                print(playerdata[orderIndex][1])
-                //                print(playerdata[orderIndex][2])
-                //                print(playerdata[orderIndex][3])
-                //                print(playerdata[orderIndex][4])
-                //                print("-----------------------")
-                
+
+        for i in 0...8 {
+            if (retainData.playerJsonData.keys.contains(retainData.order[i])) {
+                var arr:Array<String> = retainData.playerJsonData[retainData.order[i]]!
+
+                retainData.playerData.append(PlayerData.init(uniformNumber: Int(arr[0])!,
+                                                             fullName: arr[1],
+                                                             calledName: arr[2],
+                                                             cheeringSongFlag: Int(arr[3])!,
+                                                             cheeringSong: arr[4]))
+            }else{
+                print("存在しない背番号です")
             }
+            
+            
         }
-        
-        //AppDelegateへ値を送る
-        appDelegate.playerdata = playerdata
-        //
-        //
-        //        //最初のビューコントローラーを取得する。
-        //        let controller = storyboard!.instantiateViewController(withIdentifier: pageView)
-        //
-        //        //ビューコントローラーを表示する。
-        //        self.setViewControllers([controller], direction: .forward, animated: true, completion:nil)
-        //
-        //        //データ提供元に自分を設定する。
-        //        self.dataSource = self
-        
         
         //以下、よく分からない
         // Do any additional setup after loading the view, typically from a nib.
@@ -142,40 +104,5 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         return .mid
     }
     
-    
-    //    //右ドラッグ時の呼び出しメソッド
-    //    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-    //
-    //        //現在のビューコントローラーのインデックス番号を取得する。
-    //        //index = idList.index(of: viewController.restorationIdentifier!)!
-    //        let index = appDelegate.page
-    //        //前ページのビューコントローラーを返す。
-    //        if (index == 0) {
-    //            //appDelegate.page = index! + 8
-    //            //return storyboard!.instantiateViewController(withIdentifier: pageView)
-    //            return nil
-    //        }else{
-    //            appDelegate.page = index! - 1
-    //            return storyboard!.instantiateViewController(withIdentifier: pageView)
-    //        }
-    //    }
-    //
-    //    //左ドラッグ時の呼び出しメソッド
-    //    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-    //
-    //        //現在のビューコントローラーのインデックス番号を取得する。
-    //        //index = idList.index(of: viewController.restorationIdentifier!)!
-    //        let index = appDelegate.page
-    //
-    //        //次ページのビューコントローラーを返す。
-    //        if (index! > 7) {
-    //            //appDelegate.page = index! - 9
-    //            //return storyboard!.instantiateViewController(withIdentifier: pageView)
-    //            return nil
-    //        }else{
-    //            appDelegate.page = index! + 1
-    //            return storyboard!.instantiateViewController(withIdentifier: pageView)
-    //        }
-    //    }
     
 }

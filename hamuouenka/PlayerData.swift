@@ -20,13 +20,13 @@ class PlayerData: NSObject {
     var calledName:String
     
     //応援歌フラグ
-    var cheeringSongFlag:Bool
+    var cheeringSongFlag:Int
     
     //応援歌
     var cheeringSong:String
     
     // イニシャライザ
-    init(uniformNumber:Int,fullName:String,calledName:String,cheeringSongFlag:Bool,cheeringSong:String) {
+    init(uniformNumber:Int,fullName:String,calledName:String,cheeringSongFlag:Int,cheeringSong:String) {
         self.uniformNumber = uniformNumber
         self.fullName = fullName
         self.calledName = calledName
@@ -34,4 +34,21 @@ class PlayerData: NSObject {
         self.cheeringSong = cheeringSong
     }
     
+}
+
+class RetainData: NSObject{
+    
+    static let sharedInstance = RetainData()
+    
+    //全選手のJSONデータ
+    var playerJsonData:[Int:[String]] = [:]
+    
+    //表示する選手データ
+    var playerData :[PlayerData] = []
+    
+    //オーダーを保存する
+    var order :[Int] = []
+    
+    //出場選手を保存する（スタメン＋交代）
+    var participatedPlayer :[Int] = []
 }
