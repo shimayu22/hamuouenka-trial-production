@@ -59,63 +59,7 @@ class PlayerSelectViewController: UIViewController {
         }
     }
     
-    @IBAction func YODAIKAN(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func SUGIYAKENSHI(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func TANAKAKENSUKE(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func LAIRD(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func NAKATASYO(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func NISHIKAWAHARUKI(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func KONDOKENSUKE(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func NAKASHIMATAKUYA(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func OTANISYOHEI(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func ASAMADAIKI(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func OHNOSYOTA(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func OKAHIROMI(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func ISHIKAWASINGO(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func ICHIKAWATOMOYA(_ sender:AnyObject){
-        buttonCP(button: sender as! UIButton)
-    }
-    
-    @IBAction func TANIGUTCHIYUYA(_ sender:AnyObject){
+    @IBAction func pushPlayerButton(_ sender:AnyObject){
         buttonCP(button: sender as! UIButton)
     }
     

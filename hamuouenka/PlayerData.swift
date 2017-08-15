@@ -38,7 +38,7 @@ class PlayerData: NSObject {
 
 class RetainData: NSObject{
     
-    static let sharedInstance = RetainData()
+    static let sharedInstance = RetainData()//シングルトン
     
     //全選手のJSONデータ
     var playerJsonData:[Int:[String]] = [:]
