@@ -529,10 +529,10 @@
             </objects>
             <point key="canvasLocation" x="1657" y="170"/>
         </scene>
-        <!--View Controller-->
+        <!--Ad View Controller-->
         <scene sceneID="kJd-p9-3gt">
             <objects>
-                <viewController id="q1Z-Wl-1he" sceneMemberID="viewController">
+                <viewController id="q1Z-Wl-1he" customClass="AdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VVs-z4-3SK"/>
                         <viewControllerLayoutGuide type="bottom" id="iVS-Bb-Uyq"/>
@@ -542,7 +542,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHI-B0-LeW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="iar-DA-jm4"/>
                                 </constraints>
@@ -551,7 +551,7 @@
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24d-pX-JsZ" userLabel="ButtonView">
-                                <rect key="frame" x="0.0" y="420" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="470" width="375" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="3s8-ic-jlk">
                                         <rect key="frame" x="62.5" y="0.0" width="250" height="50"/>
@@ -593,27 +593,31 @@
                                     <constraint firstAttribute="bottom" secondItem="3s8-ic-jlk" secondAttribute="bottom" id="U7H-PZ-b8z"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-CK-AEb" userLabel="AdView">
-                                <rect key="frame" x="0.0" y="470" width="375" height="195"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-CK-AEb" userLabel="AdView" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.91352094780000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="195" id="CKH-8e-Z5b"/>
+                                    <constraint firstAttribute="height" constant="50" id="CKH-8e-Z5b"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hqb-CK-AEb" secondAttribute="trailing" id="4KC-7g-6bS"/>
-                            <constraint firstItem="aHI-B0-LeW" firstAttribute="top" secondItem="VVs-z4-3SK" secondAttribute="bottom" id="7JF-03-W6R"/>
+                            <constraint firstItem="aHI-B0-LeW" firstAttribute="top" secondItem="VVs-z4-3SK" secondAttribute="bottom" constant="50" id="7JF-03-W6R"/>
+                            <constraint firstItem="hqb-CK-AEb" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="7wo-FL-JWf"/>
                             <constraint firstItem="24d-pX-JsZ" firstAttribute="top" secondItem="aHI-B0-LeW" secondAttribute="bottom" id="Rqc-ZY-2xr"/>
                             <constraint firstAttribute="trailing" secondItem="aHI-B0-LeW" secondAttribute="trailing" id="VjC-l6-67S"/>
                             <constraint firstItem="24d-pX-JsZ" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="XrY-YY-FKt"/>
                             <constraint firstAttribute="trailing" secondItem="24d-pX-JsZ" secondAttribute="trailing" id="Xs4-fG-apH"/>
-                            <constraint firstItem="iVS-Bb-Uyq" firstAttribute="top" secondItem="hqb-CK-AEb" secondAttribute="bottom" id="eyA-na-bdH"/>
+                            <constraint firstAttribute="trailing" secondItem="hqb-CK-AEb" secondAttribute="trailing" id="YaG-PZ-Aso"/>
+                            <constraint firstItem="iVS-Bb-Uyq" firstAttribute="top" secondItem="hqb-CK-AEb" secondAttribute="bottom" id="a44-JC-i6D"/>
+                            <constraint firstItem="hqb-CK-AEb" firstAttribute="centerX" secondItem="4YQ-yi-nia" secondAttribute="centerX" id="fgF-oJ-Hmc"/>
                             <constraint firstItem="aHI-B0-LeW" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="nrq-Ym-J2F"/>
-                            <constraint firstItem="hqb-CK-AEb" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="zB3-B3-hkY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="hqb-CK-AEb" id="LmB-Jg-21o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-uK-mFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
