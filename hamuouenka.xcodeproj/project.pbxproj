@@ -14,6 +14,7 @@
 		611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318A1D2F451F007BF6B8 /* Main.storyboard */; };
 		611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611D318D1D2F451F007BF6B8 /* Assets.xcassets */; };
 		611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */; };
+		612E3259207A0FBA00B90328 /* ButtonProcessingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */; };
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		619F40011F443D4200CA7E36 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F40001F443D4200CA7E36 /* AdViewController.swift */; };
@@ -36,6 +37,7 @@
 		611D318D1D2F451F007BF6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611D31901D2F451F007BF6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611D31921D2F451F007BF6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonProcessingSummary.swift; sourceTree = "<group>"; };
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		619F40001F443D4200CA7E36 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */,
 				D2864E5F1E6E8D7600D272CC /* ModelController.swift */,
 				6116CBB41D8405E900A531FC /* BattingOrder.swift */,
+				612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */,
 				611953691E7D64FF00B4DD68 /* ChangePlayerViewController.swift */,
 				D2864E611E6EB1DE00D272CC /* icon-baseball01.png */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 				61D150421F3C2C0500CC89C3 /* PlayerData.swift in Sources */,
 				D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */,
 				611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */,
+				612E3259207A0FBA00B90328 /* ButtonProcessingSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
