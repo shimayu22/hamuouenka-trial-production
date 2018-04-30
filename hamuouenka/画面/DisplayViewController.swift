@@ -11,29 +11,35 @@ import UIKit
 
 class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
 
-    var retainData:RetainData = RetainData.sharedInstance
-    
+    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
+
     //PageViewControllerのデータの準備
     var pageViewController: UIPageViewController?
     
     //最初からあるメソッド
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        for i in 0...8 {
-            if (retainData.playerJsonData.keys.contains(retainData.order[i])) {
-                var arr:Array<String> = retainData.playerJsonData[retainData.order[i]]!
-
-                retainData.playerData.append(PlayerData.init(uniformNumber: Int(arr[0])!,
-                                                             fullName: arr[1],
-                                                             calledName: arr[2],
-                                                             cheeringSongFlag: Int(arr[3])!,
-                                                             cheeringSong: arr[4]))
-            }else{
-                print("存在しない背番号です")
+        
+        //JSONをパースして選手情報を保持する
+        let path = Bundle.main.path(forResource: "player",ofType: "json")!
+        let jsondata = try! Data(contentsOf: URL(fileURLWithPath: path))
+        let json = JSON(data:jsondata)//JSONデータ読み込み
+        var index = 0//JSONを辞書型にする時に使うカウンタ
+        
+        for i in 0...8{
+            for _ in json{
+                if (json[index]["number"].intValue == sheardPlayerData.playerRetainData.order[i]){
+                    sheardPlayerData.playerRetainData.playerData.append(PlayerData.init(
+                        uniformNumber: json[index]["number"].intValue,
+                        fullName: json[index]["name"].stringValue,
+                        calledName: json[index]["called"].stringValue,
+                        cheeringSongFlag: json[index]["flag"].intValue,
+                        cheeringSong: json[index]["lyrics"].stringValue))
+                }
+                
+                index += 1
+                
             }
-            
-            
         }
         
         //以下、よく分からない

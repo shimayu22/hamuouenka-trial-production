@@ -14,7 +14,10 @@
 		611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318A1D2F451F007BF6B8 /* Main.storyboard */; };
 		611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611D318D1D2F451F007BF6B8 /* Assets.xcassets */; };
 		611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */; };
-		612E3259207A0FBA00B90328 /* ButtonProcessingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */; };
+		6127BDA1208C81FD002833AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BD9F208C81FC002833AA /* Constants.swift */; };
+		6127BDA2208C81FD002833AA /* MakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA0208C81FC002833AA /* MakeButton.swift */; };
+		6127BDA6208C8452002833AA /* PlayerRetainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA5208C8452002833AA /* PlayerRetainData.swift */; };
+		6127BDA8208C8599002833AA /* ButtonProcessingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */; };
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		619F40011F443D4200CA7E36 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F40001F443D4200CA7E36 /* AdViewController.swift */; };
@@ -37,7 +40,10 @@
 		611D318D1D2F451F007BF6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611D31901D2F451F007BF6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611D31921D2F451F007BF6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonProcessingSummary.swift; sourceTree = "<group>"; };
+		6127BD9F208C81FC002833AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6127BDA0208C81FC002833AA /* MakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeButton.swift; sourceTree = "<group>"; };
+		6127BDA5208C8452002833AA /* PlayerRetainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRetainData.swift; sourceTree = "<group>"; };
+		6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonProcessingSummary.swift; path = "hamuouenka/処理/ButtonProcessingSummary.swift"; sourceTree = SOURCE_ROOT; };
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		619F40001F443D4200CA7E36 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
@@ -83,25 +89,44 @@
 		611D31851D2F451E007BF6B8 /* hamuouenka */ = {
 			isa = PBXGroup;
 			children = (
-				611D318A1D2F451F007BF6B8 /* Main.storyboard */,
 				611D31861D2F451F007BF6B8 /* AppDelegate.swift */,
-				611D31881D2F451F007BF6B8 /* ViewController.swift */,
-				6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */,
-				61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */,
-				D2864E5F1E6E8D7600D272CC /* ModelController.swift */,
-				6116CBB41D8405E900A531FC /* BattingOrder.swift */,
-				612E3258207A0FB900B90328 /* ButtonProcessingSummary.swift */,
-				611953691E7D64FF00B4DD68 /* ChangePlayerViewController.swift */,
+				6127BD9F208C81FC002833AA /* Constants.swift */,
+				611D318A1D2F451F007BF6B8 /* Main.storyboard */,
+				6127BDA3208C820D002833AA /* 画面 */,
+				6127BDA4208C825C002833AA /* 処理 */,
 				D2864E611E6EB1DE00D272CC /* icon-baseball01.png */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
-				6198955D1DCF4D41008595CE /* SwiftyJSON.swift */,
 				D2864E5D1E6E7FE100D272CC /* player.json */,
-				61D150411F3C2C0500CC89C3 /* PlayerData.swift */,
+				6198955D1DCF4D41008595CE /* SwiftyJSON.swift */,
 				619F40001F443D4200CA7E36 /* AdViewController.swift */,
 			);
 			path = hamuouenka;
+			sourceTree = "<group>";
+		};
+		6127BDA3208C820D002833AA /* 画面 */ = {
+			isa = PBXGroup;
+			children = (
+				611D31881D2F451F007BF6B8 /* ViewController.swift */,
+				6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */,
+				61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */,
+				611953691E7D64FF00B4DD68 /* ChangePlayerViewController.swift */,
+				D2864E5F1E6E8D7600D272CC /* ModelController.swift */,
+			);
+			path = "画面";
+			sourceTree = "<group>";
+		};
+		6127BDA4208C825C002833AA /* 処理 */ = {
+			isa = PBXGroup;
+			children = (
+				6127BDA0208C81FC002833AA /* MakeButton.swift */,
+				6116CBB41D8405E900A531FC /* BattingOrder.swift */,
+				6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */,
+				61D150411F3C2C0500CC89C3 /* PlayerData.swift */,
+				6127BDA5208C8452002833AA /* PlayerRetainData.swift */,
+			);
+			path = "処理";
 			sourceTree = "<group>";
 		};
 		BC387630B2FE4155976ADFAE /* Pods */ = {
@@ -252,16 +277,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6116CBB51D8405E900A531FC /* BattingOrder.swift in Sources */,
+				6127BDA6208C8452002833AA /* PlayerRetainData.swift in Sources */,
 				619F40011F443D4200CA7E36 /* AdViewController.swift in Sources */,
 				6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */,
 				6119536A1E7D64FF00B4DD68 /* ChangePlayerViewController.swift in Sources */,
+				6127BDA2208C81FD002833AA /* MakeButton.swift in Sources */,
 				61BE8CE61D8132CB00243A24 /* DisplayViewController.swift in Sources */,
 				611D31891D2F451F007BF6B8 /* ViewController.swift in Sources */,
 				6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */,
 				61D150421F3C2C0500CC89C3 /* PlayerData.swift in Sources */,
 				D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */,
+				6127BDA8208C8599002833AA /* ButtonProcessingSummary.swift in Sources */,
 				611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */,
-				612E3259207A0FBA00B90328 /* ButtonProcessingSummary.swift in Sources */,
+				6127BDA1208C81FD002833AA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,20 +35,3 @@ class PlayerData: NSObject {
     }
     
 }
-
-class RetainData: NSObject{
-    
-    static let sharedInstance = RetainData()//シングルトン
-    
-    //全選手のJSONデータ
-    var playerJsonData:[Int:[String]] = [:]
-    
-    //表示する選手データ
-    var playerData :[PlayerData] = []
-    
-    //オーダーを保存する
-    var order :[Int] = []
-    
-    //出場選手を保存する（スタメン＋交代）
-    var participatedPlayer :[Int] = []
-}

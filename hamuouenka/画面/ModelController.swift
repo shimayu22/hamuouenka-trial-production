@@ -21,7 +21,7 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
     
     var pageData: [String] = []
-    var retainData:RetainData = RetainData.sharedInstance
+    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
     
     //初期化
     override init() {
@@ -48,9 +48,9 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         //BattingOrder.dataObject = self.pageData[index]
         BattingOrder.bo = self.pageData[index]
         BattingOrder.index = index
-        BattingOrder.number = retainData.playerData[index].uniformNumber 
-        BattingOrder.name = retainData.playerData[index].fullName
-        BattingOrder.sngtxt = retainData.playerData[index].cheeringSong 
+        BattingOrder.number = sheardPlayerData.playerRetainData.playerData[index].uniformNumber
+        BattingOrder.name = sheardPlayerData.playerRetainData.playerData[index].fullName
+        BattingOrder.sngtxt = sheardPlayerData.playerRetainData.playerData[index].cheeringSong
         
         return BattingOrder
     }
