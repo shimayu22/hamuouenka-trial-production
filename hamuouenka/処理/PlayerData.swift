@@ -2,7 +2,7 @@
 //  PlayerData.swift
 //  hamuouenka
 //
-//  Created by 島田裕 on 2017/08/10.
+//  Created by Yutaka Shimada on 2017/08/10.
 //  Copyright © 2017年 shimayu. All rights reserved.
 //
 

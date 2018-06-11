@@ -6,14 +6,6 @@
 //  Copyright © 2018年 shimayu. All rights reserved.
 //
 
-//
-//  ViewController.swift
-//  hamuouenka
-//
-//  Created by 島田裕 on 2016/07/08.
-//  Copyright © 2016年 shimayu. All rights reserved.
-//
-
 import UIKit
 
 class ParseJSON {

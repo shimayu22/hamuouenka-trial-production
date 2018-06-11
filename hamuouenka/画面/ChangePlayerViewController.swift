@@ -2,7 +2,7 @@
 ////  ChangePlayerViewController.swift
 ////  hamuouenka
 ////
-////  Created by 島田裕 on 2017/03/18.
+////  Created by Yutaka Shimada on 2017/03/18.
 ////  Copyright © 2017年 shimayu. All rights reserved.
 ////
 //

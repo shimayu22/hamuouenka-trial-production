@@ -3,7 +3,7 @@
 //  DisplayViewController.swift
 //  hamuouenka
 //
-//  Created by 島田裕 on 2016/09/08.
+//  Created by Yutaka Shimada on 2016/09/08.
 //  Copyright © 2016年 shimayu. All rights reserved.
 //
 

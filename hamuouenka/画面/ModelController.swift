@@ -2,7 +2,7 @@
 //  ModelController.swift
 //  Swift_PageView_test
 //
-//  Created by SHIMADA Yutaka on 2017/03/07.
+//  Created by Yutaka Shimada on 2017/03/07.
 //  Copyright © 2017年 SHIMADA Yutaka. All rights reserved.
 //
 

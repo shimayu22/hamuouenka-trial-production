@@ -2,7 +2,7 @@
 //  PlayerSelectViewController.swift
 //  hamuouenka
 //
-//  Created by 島田裕 on 2016/07/17.
+//  Created by Yutaka Shimada on 2016/07/17.
 //  Copyright © 2016年 shimayu. All rights reserved.
 //
 
