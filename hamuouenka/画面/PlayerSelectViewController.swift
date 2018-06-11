@@ -11,7 +11,7 @@ import UIKit
 class PlayerSelectViewController: UIViewController {
     
     var sheardPlayerData:shaerdData = shaerdData.sharedInstance
-    var order :[Int] = []//スタメンの背番号を保持する
+    //var order :[Int] = []//スタメンの背番号を保持する
     let buttonPS = ButtonProcessingSummary()
     
     override func viewDidLoad() {
@@ -30,11 +30,11 @@ class PlayerSelectViewController: UIViewController {
     @IBOutlet weak var Border: UILabel!
     
     @IBAction func clear(_ sender:UIButton){
-        //buttonPS.clearCP(arr: order, button: sender, order: order.endIndex)
+        buttonPS.clearCP()
     }
     
     @IBAction func Back(_ sender:UIButton){
-        //buttonPS.pushBuckButton(btn: sender)
+        buttonPS.pushBuckButton()
     }
     
     @objc func pushPlayerButton(_ btn:UIButton){
@@ -43,10 +43,8 @@ class PlayerSelectViewController: UIViewController {
     
     //戻ってくる時の処理
     @IBAction func backToTop(segue: UIStoryboardSegue) {
-        //buttonPS.clearCP(arr: order)
-        sheardPlayerData.playerRetainData.participatedPlayer.removeAll()
-        order.removeAll()
-        sheardPlayerData.playerRetainData.playerData.removeAll()
+        buttonPS.clearCP()
+        
     }
     
     //Enterボタンをtrueだと活性化、falseだと不活性化する
@@ -68,6 +66,18 @@ class PlayerSelectViewController: UIViewController {
             Border.text = "\(number)番を選んでください"
         }
     }
+    
+    //debuglabelに選択した背番号を表示する
+    func updateDebugLabel(){
+        if sheardPlayerData.playerRetainData.order.isEmpty {
+            debuglabel.text = "選手を選択してください"
+        }else{
+            debuglabel.text = String(describing: sheardPlayerData.playerRetainData.order)
+        }
         
+
+    }
+    
+    
     
 }
