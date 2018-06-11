@@ -11,7 +11,6 @@ import UIKit
 class PlayerSelectViewController: UIViewController {
     
     var sheardPlayerData:shaerdData = shaerdData.sharedInstance
-    //var order :[Int] = []//スタメンの背番号を保持する
     let buttonPS = ButtonProcessingSummary()
     
     override func viewDidLoad() {
@@ -44,7 +43,6 @@ class PlayerSelectViewController: UIViewController {
     //戻ってくる時の処理
     @IBAction func backToTop(segue: UIStoryboardSegue) {
         buttonPS.clearCP()
-        
     }
     
     //Enterボタンをtrueだと活性化、falseだと不活性化する

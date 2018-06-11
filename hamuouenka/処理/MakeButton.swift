@@ -24,10 +24,13 @@ class MakeButton{
         scrollView.center = base.view.center
         scrollView.backgroundColor = UIColor.lightGray
         
-        var count:Int = 0
+        let a:Int = sheardPlayerData.playerRetainData.playerData.count/3
+        let h:Int = (a + 1) * (kButtonHeight + kViewMargin)
+        
+        scrollView.contentSize = CGSize(width: kViewWidth, height: h)
         
         //ボタンを作る
-        for i in 0 ... sheardPlayerData.playerRetainData.playerData.count - 1 {
+        for i in 0..<sheardPlayerData.playerRetainData.playerData.count {
             
             //応援歌がある選手のみボタンにする為の処理
             if (sheardPlayerData.playerRetainData.playerData[i].cheeringSongFlag != 1) {continue}
@@ -68,15 +71,8 @@ class MakeButton{
             
             //ボタン表示（Viewに追加）
             scrollView.addSubview(simpleButton)
-            
-            //scrollviewのcontentsize用
-            count = count + 1
         }
         
-        let a:Int = count/3
-        let h:Int = (a + 1) * (kButtonHeight + kViewMargin)
-        
-        scrollView.contentSize = CGSize(width: kViewWidth, height: h)
         base.view.addSubview(scrollView)
     }
 }
