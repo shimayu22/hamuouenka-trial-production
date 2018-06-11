@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //選手情報が入っているJSONをパースする
+        let parse = ParseJSON()
+        parse.parseJSON()
     }
 
     override func didReceiveMemoryWarning() {
