@@ -74,10 +74,5 @@ class PlayerSelectViewController: UIViewController {
         }else{
             debuglabel.text = String(describing: sheardPlayerData.playerRetainData.order)
         }
-        
-
     }
-    
-    
-    
 }
