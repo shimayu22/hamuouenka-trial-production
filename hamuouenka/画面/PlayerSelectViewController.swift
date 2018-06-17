@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerSelectViewController: UIViewController {
     
-    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
+    let sheardPlayerData:shaerdData = shaerdData.sharedInstance
     let buttonPS = ButtonProcessingSummary()
     
     override func viewDidLoad() {
@@ -70,7 +70,7 @@ class PlayerSelectViewController: UIViewController {
         if sheardPlayerData.playerRetainData.order.isEmpty {
             debuglabel.text = "選手を選択してください"
         }else{
-            debuglabel.text = String(describing: sheardPlayerData.playerRetainData.order)
+        debuglabel.text = String(describing: sheardPlayerData.playerRetainData.order)
         }
     }
 }

@@ -21,26 +21,26 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         super.viewDidLoad()
         
         //JSONをパースして選手情報を保持する
-        let path = Bundle.main.path(forResource: "player",ofType: "json")!
-        let jsondata = try! Data(contentsOf: URL(fileURLWithPath: path))
-        let json = JSON(data:jsondata)//JSONデータ読み込み
-        var index = 0//JSONを辞書型にする時に使うカウンタ
+//        let path = Bundle.main.path(forResource: "player",ofType: "json")!
+//        let jsondata = try! Data(contentsOf: URL(fileURLWithPath: path))
+//        let json = JSON(data:jsondata)//JSONデータ読み込み
+//        var index = 0//JSONを辞書型にする時に使うカウンタ
         
-        for i in 0...8{
-            for _ in json{
-                if (json[index]["number"].intValue == sheardPlayerData.playerRetainData.order[i]){
-                    sheardPlayerData.playerRetainData.playerData.append(PlayerData.init(
-                        uniformNumber: json[index]["number"].intValue,
-                        fullName: json[index]["name"].stringValue,
-                        calledName: json[index]["called"].stringValue,
-                        cheeringSongFlag: json[index]["flag"].intValue,
-                        cheeringSong: json[index]["lyrics"].stringValue))
-                }
-                
-                index += 1
-                
-            }
-        }
+//        for i in 0...8{
+//            for _ in json{
+//                if (json[index]["number"].intValue == sheardPlayerData.playerRetainData.order[i]){
+//                    sheardPlayerData.playerRetainData.playerData.append(PlayerData.init(
+//                        uniformNumber: json[index]["number"].intValue,
+//                        fullName: json[index]["name"].stringValue,
+//                        calledName: json[index]["called"].stringValue,
+//                        cheeringSongFlag: json[index]["flag"].intValue,
+//                        cheeringSong: json[index]["lyrics"].stringValue))
+//                }
+//
+//                index += 1
+//
+//            }
+//        }
         
         //以下、よく分からない
         // Do any additional setup after loading the view, typically from a nib.

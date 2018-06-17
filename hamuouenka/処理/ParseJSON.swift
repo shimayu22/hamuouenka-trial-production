@@ -28,10 +28,10 @@ class ParseJSON {
                                       calledName: json[index]["called"].stringValue,
                                       cheeringSongFlag: json[index]["flag"].int!,
                                       cheeringSong: json[index]["lyrics"].stringValue)
-            
             sheardPlayerData.playerRetainData.playerData.append(tmp)
 
             index += 1
+            
         }
     }
 }

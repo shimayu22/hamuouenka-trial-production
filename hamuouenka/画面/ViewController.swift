@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let sheardPlayerData:shaerdData = shaerdData.sharedInstance
+    let parse = ParseJSON()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //選手情報が入っているJSONをパースする
-        let parse = ParseJSON()
         parse.parseJSON()
     }
 
