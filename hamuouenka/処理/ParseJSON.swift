@@ -9,8 +9,6 @@
 import UIKit
 
 class ParseJSON {
-
-    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
     
     func parseJSON(){
     

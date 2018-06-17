@@ -6,26 +6,31 @@
 //  Copyright © 2018年 shimayu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class PlayerRetainData{
+class sheardPlayerData: NSObject {
+    
     //表示する選手データ
     var playerData :[PlayerData]
     //オーダーを保存する
     var order :[Int]
     //出場選手を保存する（スタメン＋交代）
     var participatedPlayer :[Int]
-
-    init(playerData:[PlayerData],order:[Int],participatedPlayer :[Int]){
-        self.playerData = playerData
-        self.order = order
-        self.participatedPlayer = participatedPlayer
+    
+    class var playerRetainData: sheardPlayerData {
+        struct Static {
+            static let instance : sheardPlayerData = sheardPlayerData()
+        }
+        return Static.instance
+        
     }
-}
-
-class shaerdData:NSObject{
-
-    var playerRetainData = PlayerRetainData(playerData: [], order: [], participatedPlayer: [])
-    static let sharedInstance:shaerdData = shaerdData()//シングルトン
-    private override init() {}
+    
+    private override init() {
+        
+        self.playerData = []
+        self.order = []
+        self.participatedPlayer = []
+        
+        super.init()
+    }
 }

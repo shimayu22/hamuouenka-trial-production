@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let sheardPlayerData:shaerdData = shaerdData.sharedInstance
     let parse = ParseJSON()
     
     override func viewDidLoad() {

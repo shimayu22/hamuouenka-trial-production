@@ -10,7 +10,6 @@ import UIKit
 
 class PlayerSelectViewController: UIViewController {
     
-    let sheardPlayerData:shaerdData = shaerdData.sharedInstance
     let buttonPS = ButtonProcessingSummary()
     
     override func viewDidLoad() {

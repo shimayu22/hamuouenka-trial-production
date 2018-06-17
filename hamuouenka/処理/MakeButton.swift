@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class MakeButton{
-    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
+    
     let base:UIViewController
     
     init(base:UIViewController){

@@ -21,7 +21,6 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
     
     var pageData: [String] = []
-    var sheardPlayerData:shaerdData = shaerdData.sharedInstance
     
     //初期化
     override init() {
