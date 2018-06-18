@@ -11,8 +11,6 @@ import UIKit
 
 class ButtonProcessingSummary{
     
-    //var playerSelectVC = PlayerSelectViewController()
-    
     //ボタン共通処理
     func buttonCP(btn:UIButton){
         //選択したボタンが9個以下なら配列に追加して選手ボタンを非活性にする

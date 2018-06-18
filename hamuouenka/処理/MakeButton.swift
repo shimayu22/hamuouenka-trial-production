@@ -20,20 +20,39 @@ class MakeButton{
     func makeButton(){
         //UIScrollViewを作る
         let scrollView:UIScrollView = UIScrollView()
-        scrollView.frame.size = CGSize(width: kViewWidth, height: kViewHeight)
-        scrollView.center = base.view.center
+        //scrollView.frame.size = CGSize(width: kViewWidth, height: kViewHeight)
+        scrollView.frame = CGRect(x:((self.base.view.bounds.width - CGFloat(kViewWidth))/2), y: 100, width: CGFloat(kViewWidth), height: CGFloat(kViewHeight))
         scrollView.backgroundColor = UIColor.lightGray
         
-        let a:Int = sheardPlayerData.playerRetainData.playerData.count/3
-        let h:Int = (a + 1) * (kButtonHeight + kViewMargin)
+        var a:Int = 0
+        //スクロールの全長を指定する
+        for i in 0..<sheardPlayerData.playerRetainData.playerData.count {
+            if (sheardPlayerData.playerRetainData.playerData[i].cheeringSongFlag == 1) {
+                a += 1
+            }
+        }
+        
+        a /= 3
+        
+//        if a%3 > 0{
+//            a += 1
+//        }
+        
+        let h:Int = a * (kButtonHeight + kViewMargin)
         
         scrollView.contentSize = CGSize(width: kViewWidth, height: h)
+        
+        var column = -1
+        var row = 1
+        var b = 1
         
         //ボタンを作る
         for i in 0..<sheardPlayerData.playerRetainData.playerData.count {
             
             //応援歌がある選手のみボタンにする為の処理
-            if (sheardPlayerData.playerRetainData.playerData[i].cheeringSongFlag != 1) {continue}
+            if (sheardPlayerData.playerRetainData.playerData[i].cheeringSongFlag != 1) {
+                continue
+            }
             
             //ボタンの初期化
             let simpleButton = UIButton()
@@ -53,9 +72,17 @@ class MakeButton{
             //サイズ
             simpleButton.frame = CGRect(x: 0, y: 0, width: kButtonWidth, height: kButtonHeight)
             
-            let b:Int = (i/3) * 3 //横位置の補正（3つ毎に折り返す）
-            let x:Int = (i - b) * kPositionWidth + kButtonWidthMargin //ボタンの横位置
-            let y:Int = (i/3) * kPositionHeight + kButtonHeightMargin//ボタンの縦位置
+            if b%3 == 1 {
+                column += 1
+                row = 0
+            }else if b%3 == 2{
+                row = 1
+            }else if b%3 == 0{
+                row = 2
+            }
+            
+            let x:Int = row * kPositionWidth + kButtonWidthMargin //ボタンの横位置
+            let y:Int = column * kPositionHeight + kButtonHeightMargin//ボタンの縦位置
             
             //配置場所
             simpleButton.layer.position = CGPoint(x: x, y: y)
@@ -71,6 +98,8 @@ class MakeButton{
             
             //ボタン表示（Viewに追加）
             scrollView.addSubview(simpleButton)
+            
+            b += 1
         }
         
         base.view.addSubview(scrollView)

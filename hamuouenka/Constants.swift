@@ -17,5 +17,5 @@ let kPositionWidth = 120
 let kPositionHeight = 70
 
 let kViewWidth = 340
-let kViewHeight = 300
-let kViewMargin = 30
+let kViewHeight = 340
+let kViewMargin = 35
