@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -85,272 +85,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQf-oi-CvN">
-                                <rect key="frame" x="0.0" y="91" width="375" height="350"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-qI-qeT">
-                                        <rect key="frame" x="13" y="10" width="350" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z4-jg-sxb">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DTp-M7-2xy"/>
-                                                    <constraint firstAttribute="height" constant="50" id="Toy-mB-Z6Z"/>
-                                                </constraints>
-                                                <state key="normal" title="陽岱鋼"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="q3G-gw-lBM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITt-z4-HSC">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="66a-kH-SNK"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="RAC-RU-dML"/>
-                                                </constraints>
-                                                <state key="normal" title="杉谷拳士"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="MHb-Br-Py9"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVh-J6-3nr">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Xcp-og-ak6"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="syu-Wo-aOU"/>
-                                                </constraints>
-                                                <state key="normal" title="田中賢介"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="xWh-1f-tkp"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6p-jt-PuK" userLabel="IIYAMAYUJI">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="FZS-uM-olQ"/>
-                                                    <constraint firstAttribute="height" constant="50" id="nHM-Pm-uAM"/>
-                                                </constraints>
-                                                <state key="normal" title="飯山裕志"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="poy-nM-6dg"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mzw-ok-djT">
-                                        <rect key="frame" x="13" y="80" width="350" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLo-JS-u2T">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="w5q-On-gfM"/>
-                                                    <constraint firstAttribute="height" constant="50" id="wS7-wO-XrW"/>
-                                                </constraints>
-                                                <state key="normal" title="レアード"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="DaL-Nm-8xK"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kp-TF-8Mt">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="EBv-Bd-Jgj"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="kBX-fe-4W3"/>
-                                                </constraints>
-                                                <state key="normal" title="中田翔"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="6xM-eQ-DA8"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-Ak-gkn">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="9aC-P9-au2"/>
-                                                    <constraint firstAttribute="height" constant="50" id="De9-Pu-nRb"/>
-                                                </constraints>
-                                                <state key="normal" title="西川遥輝"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="ijL-Td-Rvk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-un-8xD">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="NYG-rv-PiG"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Xk8-lc-Ays"/>
-                                                </constraints>
-                                                <state key="normal" title="近藤健介"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="C0j-NS-7Jo"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YXB-vR-bYn">
-                                        <rect key="frame" x="13" y="150" width="350" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k2-3S-ATO">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Td4-YG-gRv"/>
-                                                    <constraint firstAttribute="height" constant="50" id="u1u-Q4-GGW"/>
-                                                </constraints>
-                                                <state key="normal" title="中島卓也"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="5ug-XP-BhZ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-Dz-uLP">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="1H0-5Y-gyo"/>
-                                                    <constraint firstAttribute="height" constant="50" id="XiP-9y-qzm"/>
-                                                </constraints>
-                                                <state key="normal" title="大谷翔平"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="q4Z-tR-Kb2"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-Gm-A9S">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="jDA-CY-B2K"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="xWQ-b9-AGQ"/>
-                                                </constraints>
-                                                <state key="normal" title="淺間大基"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="8c3-Io-Z4F"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGL-oJ-1vb">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="B1k-bQ-K4d"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="O7c-Ku-Gkd"/>
-                                                </constraints>
-                                                <state key="normal" title="大野奨太"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="jCU-8X-ebh"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gHW-XR-VXd">
-                                        <rect key="frame" x="13" y="220" width="350" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duz-f5-Noa">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="1gy-31-1nW"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Emm-IT-HKU"/>
-                                                </constraints>
-                                                <state key="normal" title="岡大海"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="aqm-D5-fHC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-gi-Jaw" userLabel="YANOKENJI">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="OUd-Cy-118"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="aI4-eN-Dv3"/>
-                                                </constraints>
-                                                <state key="normal" title="矢野謙次"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="Tkh-0n-SOk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSU-L3-JQo">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="3lU-ak-fF7"/>
-                                                    <constraint firstAttribute="height" constant="50" id="AgO-86-t6P"/>
-                                                </constraints>
-                                                <state key="normal" title="石川慎吾"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="QYd-Pm-wnP"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlY-ch-A61">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="054-eO-iA2"/>
-                                                    <constraint firstAttribute="height" constant="50" id="W29-uI-ia6"/>
-                                                </constraints>
-                                                <state key="normal" title="市川友也"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="zgo-tc-7An"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WR4-7D-QX0">
-                                        <rect key="frame" x="13" y="290" width="350" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-lG-kzi">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Hx8-Yd-GtZ"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="XcM-Gk-gBh"/>
-                                                </constraints>
-                                                <state key="normal" title="谷口雄也"/>
-                                                <connections>
-                                                    <action selector="pushPlayerButton:" destination="WeK-yA-91j" eventType="touchUpInside" id="UIo-4Q-aHN"/>
-                                                </connections>
-                                            </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoC-T9-clc" userLabel="EmptyView1">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-0F-3lh" userLabel="EmptyView3">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cvf-Mk-Rcd" userLabel="EmptyView2">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="50"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Cvf-Mk-Rcd" firstAttribute="leading" secondItem="WR4-7D-QX0" secondAttribute="leading" constant="270" id="Xeq-dA-rAk"/>
-                                            <constraint firstItem="c2o-0F-3lh" firstAttribute="leading" secondItem="WR4-7D-QX0" secondAttribute="leading" constant="180" id="zac-ef-Ift"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="WR4-7D-QX0" secondAttribute="bottom" constant="10" id="0jy-Li-8v9"/>
-                                    <constraint firstItem="gHW-XR-VXd" firstAttribute="centerX" secondItem="BQf-oi-CvN" secondAttribute="centerX" id="1E5-79-cfj"/>
-                                    <constraint firstItem="YXB-vR-bYn" firstAttribute="top" secondItem="Mzw-ok-djT" secondAttribute="bottom" constant="20" id="1yi-M4-dOn"/>
-                                    <constraint firstItem="ELC-qI-qeT" firstAttribute="centerX" secondItem="BQf-oi-CvN" secondAttribute="centerX" id="9Fi-mL-5yS"/>
-                                    <constraint firstItem="WR4-7D-QX0" firstAttribute="centerX" secondItem="BQf-oi-CvN" secondAttribute="centerX" id="DGe-hQ-sbJ"/>
-                                    <constraint firstItem="WR4-7D-QX0" firstAttribute="top" secondItem="gHW-XR-VXd" secondAttribute="bottom" constant="20" id="Sa9-5y-xKl"/>
-                                    <constraint firstAttribute="height" constant="350" id="lkV-CX-ekF"/>
-                                    <constraint firstAttribute="trailing" secondItem="WR4-7D-QX0" secondAttribute="trailing" constant="12" id="n7I-t4-fA7"/>
-                                    <constraint firstItem="Mzw-ok-djT" firstAttribute="top" secondItem="ELC-qI-qeT" secondAttribute="bottom" constant="20" id="nmG-xR-A4E"/>
-                                    <constraint firstItem="WR4-7D-QX0" firstAttribute="leading" secondItem="gHW-XR-VXd" secondAttribute="leading" id="qQQ-qw-pxD"/>
-                                    <constraint firstItem="gHW-XR-VXd" firstAttribute="top" secondItem="YXB-vR-bYn" secondAttribute="bottom" constant="20" id="qyM-YT-ZNL"/>
-                                    <constraint firstItem="YXB-vR-bYn" firstAttribute="centerX" secondItem="BQf-oi-CvN" secondAttribute="centerX" id="tXx-2X-j3M"/>
-                                    <constraint firstItem="Mzw-ok-djT" firstAttribute="centerX" secondItem="BQf-oi-CvN" secondAttribute="centerX" id="w2f-Jc-szG"/>
-                                    <constraint firstItem="ELC-qI-qeT" firstAttribute="top" secondItem="BQf-oi-CvN" secondAttribute="top" constant="10" id="xHg-mZ-Mxj"/>
-                                </constraints>
-                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BY-vj-1MK">
                                 <rect key="frame" x="47" y="490" width="281" height="38"/>
                                 <constraints>
@@ -404,39 +138,20 @@
                         <constraints>
                             <constraint firstItem="yTR-L8-vSs" firstAttribute="top" secondItem="hRa-Gf-rrN" secondAttribute="bottom" constant="20" id="2Tc-ND-5Ke"/>
                             <constraint firstItem="3BY-vj-1MK" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="74c-Ab-ngB"/>
-                            <constraint firstItem="BQf-oi-CvN" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="RF0-Bo-5HX"/>
-                            <constraint firstItem="BQf-oi-CvN" firstAttribute="leading" secondItem="xgd-DE-7Aj" secondAttribute="leading" id="SRm-aY-dtE"/>
                             <constraint firstAttribute="bottom" secondItem="3BY-vj-1MK" secondAttribute="bottom" constant="139" id="cuk-Zw-vUz"/>
                             <constraint firstItem="yTR-L8-vSs" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="dab-1b-ynO"/>
                             <constraint firstItem="lFd-9X-52h" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="gs2-aQ-CHW"/>
-                            <constraint firstAttribute="trailing" secondItem="BQf-oi-CvN" secondAttribute="trailing" id="jLY-Wf-Sxh"/>
-                            <constraint firstItem="BQf-oi-CvN" firstAttribute="top" secondItem="yTR-L8-vSs" secondAttribute="bottom" constant="30" id="z7d-Mh-agx"/>
                             <constraint firstItem="HjK-kX-TDx" firstAttribute="top" secondItem="lFd-9X-52h" secondAttribute="bottom" constant="60" id="zID-3J-l5J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q10-pP-qPB"/>
                     <connections>
-                        <outlet property="ASAMADAIKI" destination="Ov6-Gm-A9S" id="Njm-ME-R2k"/>
                         <outlet property="Back" destination="yd9-dQ-WCU" id="4tk-HS-Yih"/>
-                        <outlet property="Border" destination="yTR-L8-vSs" id="Cl6-3M-ZXZ"/>
+                        <outlet property="Border" destination="yTR-L8-vSs" id="kN8-1G-Nc1"/>
                         <outlet property="Enter" destination="Vj4-Nf-Gzu" id="JuG-vK-vQS"/>
-                        <outlet property="ICHIKAWATOMOYA" destination="BlY-ch-A61" id="t7I-7R-M4Z"/>
-                        <outlet property="ISHIKAWASINGO" destination="NSU-L3-JQo" id="e9b-d7-vFm"/>
-                        <outlet property="KONDOKENSUKE" destination="XhR-un-8xD" id="md1-Gc-A65"/>
-                        <outlet property="LAIRD" destination="JLo-JS-u2T" id="r4X-je-EYN"/>
-                        <outlet property="NAKASHIMATAKUYA" destination="8k2-3S-ATO" id="CE7-Fp-3Og"/>
-                        <outlet property="NAKATASYO" destination="5Kp-TF-8Mt" id="wiv-2D-1dl"/>
-                        <outlet property="NISHIKAWAHARUKI" destination="B5A-Ak-gkn" id="bqJ-qK-W4x"/>
-                        <outlet property="OHNOSYOTA" destination="CGL-oJ-1vb" id="bEZ-sQ-DK9"/>
-                        <outlet property="OKAHIROMI" destination="Duz-f5-Noa" id="fVn-ma-bgA"/>
-                        <outlet property="OTANISYOHEI" destination="1Gc-Dz-uLP" id="c9b-Lj-8Y0"/>
-                        <outlet property="SUGIYAKENSHI" destination="ITt-z4-HSC" id="BZw-F3-w4r"/>
-                        <outlet property="TANAKAKENSUKE" destination="sVh-J6-3nr" id="Et5-BG-ekI"/>
-                        <outlet property="TANIGUCHIYUYA" destination="ZC2-lG-kzi" id="MUT-PL-wux"/>
-                        <outlet property="YODAIKAN" destination="8z4-jg-sxb" id="dqS-vd-2JZ"/>
                         <outlet property="back" destination="yd9-dQ-WCU" id="O9O-9e-vhP"/>
                         <outlet property="clear" destination="OUA-6H-MDm" id="O4f-SC-dN2"/>
-                        <outlet property="debuglabel" destination="3BY-vj-1MK" id="4ZK-Lr-Zgx"/>
+                        <outlet property="debuglabel" destination="3BY-vj-1MK" id="LhB-R6-Sua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dM-qf-5rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -576,6 +291,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="交代"/>
+                                                <connections>
+                                                    <segue destination="o5u-6o-4nC" kind="unwind" unwindAction="backToTopForChangeWithSegue:" id="lj3-in-2aV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -615,6 +333,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-uK-mFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="o5u-6o-4nC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="861.60000000000002" y="327.88605697151428"/>
         </scene>

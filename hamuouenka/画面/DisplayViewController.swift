@@ -3,7 +3,7 @@
 //  DisplayViewController.swift
 //  hamuouenka
 //
-//  Created by 島田裕 on 2016/09/08.
+//  Created by Yutaka Shimada on 2016/09/08.
 //  Copyright © 2016年 shimayu. All rights reserved.
 //
 
@@ -11,30 +11,12 @@ import UIKit
 
 class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
 
-    var retainData:RetainData = RetainData.sharedInstance
-    
     //PageViewControllerのデータの準備
     var pageViewController: UIPageViewController?
     
     //最初からあるメソッド
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        for i in 0...8 {
-            if (retainData.playerJsonData.keys.contains(retainData.order[i])) {
-                var arr:Array<String> = retainData.playerJsonData[retainData.order[i]]!
-
-                retainData.playerData.append(PlayerData.init(uniformNumber: Int(arr[0])!,
-                                                             fullName: arr[1],
-                                                             calledName: arr[2],
-                                                             cheeringSongFlag: Int(arr[3])!,
-                                                             cheeringSong: arr[4]))
-            }else{
-                print("存在しない背番号です")
-            }
-            
-            
-        }
         
         //以下、よく分からない
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,7 +26,7 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.delegate = self
         
         //startingViewController:の後に作成するクラス（か、StoryBoard ID？）を指定する
-        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(sheardPlayerData.playerRetainData.index, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
         
@@ -61,7 +43,6 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.view.frame = pageViewRect
         
         self.pageViewController!.didMove(toParentViewController: self)
-        
         
     }
     

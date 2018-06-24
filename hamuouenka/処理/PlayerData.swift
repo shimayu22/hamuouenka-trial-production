@@ -2,7 +2,7 @@
 //  PlayerData.swift
 //  hamuouenka
 //
-//  Created by 島田裕 on 2017/08/10.
+//  Created by Yutaka Shimada on 2017/08/10.
 //  Copyright © 2017年 shimayu. All rights reserved.
 //
 
@@ -34,21 +34,4 @@ class PlayerData: NSObject {
         self.cheeringSong = cheeringSong
     }
     
-}
-
-class RetainData: NSObject{
-    
-    static let sharedInstance = RetainData()//シングルトン
-    
-    //全選手のJSONデータ
-    var playerJsonData:[Int:[String]] = [:]
-    
-    //表示する選手データ
-    var playerData :[PlayerData] = []
-    
-    //オーダーを保存する
-    var order :[Int] = []
-    
-    //出場選手を保存する（スタメン＋交代）
-    var participatedPlayer :[Int] = []
 }
