@@ -26,7 +26,7 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.delegate = self
         
         //startingViewController:の後に作成するクラス（か、StoryBoard ID？）を指定する
-        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(sheardPlayerData.playerRetainData.index, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
         
@@ -43,7 +43,6 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.view.frame = pageViewRect
         
         self.pageViewController!.didMove(toParentViewController: self)
-        
         
     }
     

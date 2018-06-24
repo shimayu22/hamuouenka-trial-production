@@ -20,7 +20,6 @@ class MakeButton{
     func makeButton(){
         //UIScrollViewを作る
         let scrollView:UIScrollView = UIScrollView()
-        //scrollView.frame.size = CGSize(width: kViewWidth, height: kViewHeight)
         scrollView.frame = CGRect(x:((self.base.view.bounds.width - CGFloat(kViewWidth))/2), y: 100, width: CGFloat(kViewWidth), height: CGFloat(kViewHeight))
         scrollView.backgroundColor = UIColor.lightGray
         
@@ -33,10 +32,6 @@ class MakeButton{
         }
         
         a /= 3
-        
-//        if a%3 > 0{
-//            a += 1
-//        }
         
         let h:Int = a * (kButtonHeight + kViewMargin)
         

@@ -43,13 +43,25 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         //新しいview controllerを作成する
         //（withIdentifier: "ストーリーボードID名")
         let BattingOrder = storyboard.instantiateViewController(withIdentifier: "BattingOrder") as! BattingOrder
+        let sp = sheardPlayerData.playerRetainData
+
+        //orderに入れた背番号と同じplayerData.uniformNumberを探す
+        //（背番号途中抜けてるからね、仕方ないね）
+        var pdindex = 0
+        var i = 0
+        for num in sp.playerData{
+            if num.uniformNumber == sp.order[index] {
+                pdindex = i
+                break
+            }
+            i += 1
+        }
+        
         //BattingOrderのdataObjectにラベルに表示する文字列を渡している
-        //BattingOrder.dataObject = self.pageData[index]
         BattingOrder.bo = self.pageData[index]
-        BattingOrder.index = index
-        BattingOrder.number = sheardPlayerData.playerRetainData.playerData[index].uniformNumber
-        BattingOrder.name = sheardPlayerData.playerRetainData.playerData[index].fullName
-        BattingOrder.sngtxt = sheardPlayerData.playerRetainData.playerData[index].cheeringSong
+        BattingOrder.number = sp.playerData[pdindex].uniformNumber
+        BattingOrder.name = sp.playerData[pdindex].fullName
+        BattingOrder.sngtxt = sp.playerData[pdindex].cheeringSong
         
         return BattingOrder
     }
@@ -68,20 +80,17 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         //現在のページを取得
         var index = self.indexOfViewController(viewController as! BattingOrder)
-        //取得できないorページ位置が0=最初のページの場合は何もしない
-        //        if (index == 0) || (index == NSNotFound) {
-        //            return nil
-        //        }
         
         //取得できないときは何もしない
-        if (index == NSNotFound){
+        if index == NSNotFound{
             return nil
         }
         
+        sheardPlayerData.playerRetainData.index = index
+        
         //ループする為の処理
-        //最初のページであれば一番最後のページを無理やり指定する、最初のページ以外であれば一つ前のページを指定する（swift3では--を使えない）
-        if(index == 0){
-            //pageData.countは個数（月の場合は12）、indexには添え字を入れる（月の場合は11）
+        //最初のページであれば一番最後のページを無理やり指定する、最初のページ以外であれば一つ前のページを指定する
+        if(index < 1){
             index = self.pageData.count - 1
         }else{
             index -= 1
@@ -93,18 +102,24 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     
     //ページを進む処理
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
         //現在のページを取得
         var index = self.indexOfViewController(viewController as! BattingOrder)
+
         //取得できなければnilを返す
         if index == NSNotFound {
             return nil
         }
-        //取得できれば、インクリメントする（swift3では++が使えない）
-        index += 1
+        
+        sheardPlayerData.playerRetainData.index = index
+        
         //インクリメントしたindexとページ数が同じ=最終ページの場合は最初のページを指定する
-        if index == self.pageData.count {
+        if index + 1 > self.pageData.count - 1 {
             index = 0
+        }else{
+            index += 1
         }
+
         //上の処理で指定したindexを元にviewcontrollerを作成する
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }

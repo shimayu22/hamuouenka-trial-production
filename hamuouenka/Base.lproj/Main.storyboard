@@ -291,6 +291,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="交代"/>
+                                                <connections>
+                                                    <segue destination="o5u-6o-4nC" kind="unwind" unwindAction="backToTopForChangeWithSegue:" id="lj3-in-2aV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -330,6 +333,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-uK-mFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="o5u-6o-4nC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="861.60000000000002" y="327.88605697151428"/>
         </scene>

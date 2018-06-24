@@ -14,11 +14,8 @@ class BattingOrder: UIViewController {
     @IBOutlet weak var battingOrder: UILabel!
     @IBOutlet weak var nameNumber: UILabel!
     @IBOutlet weak var songText: UILabel!
-    @IBOutlet weak var changePlayerButton: UIButton!
-    @IBOutlet weak var changePlayer: UIButton!
     
     var bo:String = ""
-    var index:Int = 0
     var name: String = ""
     var number:Int = 0
     var sngtxt = ""

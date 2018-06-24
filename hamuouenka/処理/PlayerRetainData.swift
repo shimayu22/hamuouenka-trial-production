@@ -16,6 +16,8 @@ class sheardPlayerData: NSObject {
     var order :[Int]
     //出場選手を保存する（スタメン＋交代）
     var participatedPlayer :[Int]
+    //選手交替の時のインデックス
+    var index:Int
     
     class var playerRetainData: sheardPlayerData {
         struct Static {
@@ -30,6 +32,7 @@ class sheardPlayerData: NSObject {
         self.playerData = []
         self.order = []
         self.participatedPlayer = []
+        self.index = 0
         
         super.init()
     }
