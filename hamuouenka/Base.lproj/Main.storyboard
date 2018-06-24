@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -147,11 +147,11 @@
                     <navigationItem key="navigationItem" id="q10-pP-qPB"/>
                     <connections>
                         <outlet property="Back" destination="yd9-dQ-WCU" id="4tk-HS-Yih"/>
-                        <outlet property="Border" destination="yTR-L8-vSs" id="Cl6-3M-ZXZ"/>
+                        <outlet property="Border" destination="yTR-L8-vSs" id="kN8-1G-Nc1"/>
                         <outlet property="Enter" destination="Vj4-Nf-Gzu" id="JuG-vK-vQS"/>
                         <outlet property="back" destination="yd9-dQ-WCU" id="O9O-9e-vhP"/>
                         <outlet property="clear" destination="OUA-6H-MDm" id="O4f-SC-dN2"/>
-                        <outlet property="debuglabel" destination="3BY-vj-1MK" id="4ZK-Lr-Zgx"/>
+                        <outlet property="debuglabel" destination="3BY-vj-1MK" id="LhB-R6-Sua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dM-qf-5rX" userLabel="First Responder" sceneMemberID="firstResponder"/>

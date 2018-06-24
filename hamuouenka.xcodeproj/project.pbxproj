@@ -18,7 +18,6 @@
 		6127BDA1208C81FD002833AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BD9F208C81FC002833AA /* Constants.swift */; };
 		6127BDA2208C81FD002833AA /* MakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA0208C81FC002833AA /* MakeButton.swift */; };
 		6127BDA6208C8452002833AA /* PlayerRetainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA5208C8452002833AA /* PlayerRetainData.swift */; };
-		6127BDA8208C8599002833AA /* ButtonProcessingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */; };
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		619F40011F443D4200CA7E36 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F40001F443D4200CA7E36 /* AdViewController.swift */; };
@@ -45,7 +44,6 @@
 		6127BD9F208C81FC002833AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6127BDA0208C81FC002833AA /* MakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeButton.swift; sourceTree = "<group>"; };
 		6127BDA5208C8452002833AA /* PlayerRetainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRetainData.swift; sourceTree = "<group>"; };
-		6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonProcessingSummary.swift; path = "hamuouenka/処理/ButtonProcessingSummary.swift"; sourceTree = SOURCE_ROOT; };
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		619F40001F443D4200CA7E36 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				6127BDA0208C81FC002833AA /* MakeButton.swift */,
-				6127BDA7208C8598002833AA /* ButtonProcessingSummary.swift */,
 				61D150411F3C2C0500CC89C3 /* PlayerData.swift */,
 				6127BDA5208C8452002833AA /* PlayerRetainData.swift */,
 				6111C6DC20CED3D3001F3B3F /* ParseJSON.swift */,
@@ -290,7 +287,6 @@
 				6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */,
 				61D150421F3C2C0500CC89C3 /* PlayerData.swift in Sources */,
 				D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */,
-				6127BDA8208C8599002833AA /* ButtonProcessingSummary.swift in Sources */,
 				611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */,
 				6127BDA1208C81FD002833AA /* Constants.swift in Sources */,
 				6111C6DD20CED3D3001F3B3F /* ParseJSON.swift in Sources */,
