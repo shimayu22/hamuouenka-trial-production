@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BY-vj-1MK">
-                                <rect key="frame" x="47" y="490" width="281" height="38"/>
+                                <rect key="frame" x="47" y="469" width="281" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="TOX-37-6C8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="Ur9-On-MJ6"/>
@@ -96,7 +96,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lFd-9X-52h">
-                                <rect key="frame" x="18" y="557" width="340" height="50"/>
+                                <rect key="frame" x="18" y="517" width="340" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUA-6H-MDm">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
@@ -117,7 +117,7 @@
                                         </constraints>
                                         <state key="normal" title="決定"/>
                                         <connections>
-                                            <segue destination="q1Z-Wl-1he" kind="show" id="lqC-Tp-cxG"/>
+                                            <segue destination="q1Z-Wl-1he" kind="show" identifier="PushAdView" id="lqC-Tp-cxG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd9-dQ-WCU">
@@ -133,21 +133,35 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW7-WM-jGf">
+                                <rect key="frame" x="138" y="575" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="11b-3q-bqT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ZRD-IB-2Mu"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル"/>
+                                <connections>
+                                    <action selector="Cancel:" destination="WeK-yA-91j" eventType="touchUpInside" id="8Ve-07-6hL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yTR-L8-vSs" firstAttribute="top" secondItem="hRa-Gf-rrN" secondAttribute="bottom" constant="20" id="2Tc-ND-5Ke"/>
+                            <constraint firstItem="eW7-WM-jGf" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="6LQ-PK-1gX"/>
                             <constraint firstItem="3BY-vj-1MK" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="74c-Ab-ngB"/>
-                            <constraint firstAttribute="bottom" secondItem="3BY-vj-1MK" secondAttribute="bottom" constant="139" id="cuk-Zw-vUz"/>
+                            <constraint firstAttribute="bottom" secondItem="3BY-vj-1MK" secondAttribute="bottom" constant="160" id="cuk-Zw-vUz"/>
                             <constraint firstItem="yTR-L8-vSs" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="dab-1b-ynO"/>
                             <constraint firstItem="lFd-9X-52h" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="gs2-aQ-CHW"/>
-                            <constraint firstItem="HjK-kX-TDx" firstAttribute="top" secondItem="lFd-9X-52h" secondAttribute="bottom" constant="60" id="zID-3J-l5J"/>
+                            <constraint firstItem="HjK-kX-TDx" firstAttribute="top" secondItem="eW7-WM-jGf" secondAttribute="bottom" constant="42" id="yf5-Xk-dHQ"/>
+                            <constraint firstItem="HjK-kX-TDx" firstAttribute="top" secondItem="lFd-9X-52h" secondAttribute="bottom" constant="100" id="zID-3J-l5J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q10-pP-qPB"/>
                     <connections>
                         <outlet property="Back" destination="yd9-dQ-WCU" id="4tk-HS-Yih"/>
                         <outlet property="Border" destination="yTR-L8-vSs" id="kN8-1G-Nc1"/>
+                        <outlet property="Cancel" destination="eW7-WM-jGf" id="MRu-ya-ZxY"/>
                         <outlet property="Enter" destination="Vj4-Nf-Gzu" id="JuG-vK-vQS"/>
                         <outlet property="back" destination="yd9-dQ-WCU" id="O9O-9e-vhP"/>
                         <outlet property="clear" destination="OUA-6H-MDm" id="O4f-SC-dN2"/>

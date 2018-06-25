@@ -13,17 +13,23 @@ class PlayerSelectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //キャンセルボタンを透明化＆非活性化
+        Cancel.isEnabled = false
+        Cancel.alpha = 0.0
         //ボタンを作る
         let makeButton = MakeButton(base: self)
         makeButton.makeButton()
         
     }
     
+    var escape = 0
+    
     @IBOutlet weak var clear: UIButton!
     @IBOutlet weak var Enter: UIButton!
     @IBOutlet weak var Back: UIButton!
     @IBOutlet weak var debuglabel: UILabel!
     @IBOutlet weak var Border: UILabel!
+    @IBOutlet weak var Cancel: UIButton!
     
     @IBAction func clear(_ sender:UIButton){
         self.clearCP()
@@ -37,17 +43,29 @@ class PlayerSelectViewController: UIViewController {
         self.buttonCP(btn: btn)
     }
     
+    @IBAction func Cancel(_ sender:UIButton){
+        if Enter.isEnabled {
+            self.pushCancelButton()
+        }else{
+            self.segueToAdViewController()
+        }
+    }
+    
     //戻ってくる時の処理
     @IBAction func backToTop(segue: UIStoryboardSegue) {
         self.clearCP()
     }
     
+    //交替する為に戻ってくる時の処理
     @IBAction func backToTopForChange(segue:UIStoryboard){
         Border.text = "交代選手を選択してください"
         debuglabel.text = "選手を選択してください"
+        Back.isEnabled = false
+        Back.alpha = 0.0
+        Cancel.isEnabled = true
+        Cancel.alpha = 1.0
         self.isEnabledEnterButton(flag: false)
     }
-    
     
     func buttonCP(btn: UIButton){
         let sp = sheardPlayerData.playerRetainData
@@ -70,6 +88,7 @@ class PlayerSelectViewController: UIViewController {
             }
         }else if sp.order.count > 8 && Enter.isEnabled == false{
             //選手交替の時の処理
+            escape = sp.order[sp.index]
             sp.order[sp.index] = btn.tag
             sp.participatedPlayer.append(btn.tag)
             self.isEnabledEnterButton(flag: false, tagNumber: btn.tag)
@@ -123,6 +142,14 @@ class PlayerSelectViewController: UIViewController {
         //決定ボタンを非活性化する
         self.isEnabledEnterButton(flag: false)
         
+        //キャンセルボタンを非活性化＆透明化
+        Cancel.isEnabled = false
+        Cancel.alpha = 0.0
+        
+        //一人戻るボタンを活性化＆不透明化
+        Back.isEnabled = true
+        Back.alpha = 1.0
+        
         //participatedPlayerに入っている非活性にしたボタンを活性化する
         for i in sheardPlayerData.playerRetainData.participatedPlayer{
             self.isEnabledEnterButton(flag: true, tagNumber: i)
@@ -164,6 +191,22 @@ class PlayerSelectViewController: UIViewController {
             //debaglabelの表示を更新
             self.updateDebugLabel()
         }
+    }
+    
+    //選手ボタン押した後のキャンセル処理
+    func pushCancelButton(){
+        let sp = sheardPlayerData.playerRetainData
+        self.isEnabledEnterButton(flag: true, tagNumber: sp.order[sp.index])
+        self.isAlphaEnterButton(flag: true, tagNumber: sp.order[sp.index])
+        self.isEnabledEnterButton(flag: false)
+        sp.order[sp.index] = escape
+        Border.text = "交代選手を選択してください"
+        debuglabel.text = "選手を選択してください"
+    }
+    
+    //前の画面に戻りたいキャンセル処理
+    func segueToAdViewController() {
+        self.performSegue(withIdentifier: "PushAdView", sender: nil)
     }
     
 }
