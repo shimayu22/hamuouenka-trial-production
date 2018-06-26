@@ -453,5 +453,26 @@
   "lyrics": "　",
   "name": "米野 智人",
   "number": 70
+  },
+  {
+  "called": "野手汎用",
+  "flag": 1,
+  "lyrics": "行けそれ行け\n打てそれ打て\n走れここで輝け\nLet's Go FIGHTERS",
+  "name": "野手汎用",
+  "number": 100
+  },
+  {
+  "called": "途中出場",
+  "flag": 1,
+  "lyrics": "勝利を誘う晴れ舞台\nみなぎる闘志をぶつけろ\n(選手名)",
+  "name": "途中出場",
+  "number": 101
+  },
+  {
+  "called": "投手汎用",
+  "flag": 1,
+  "lyrics": "我らの期待を\n右(左)腕に懸けて\n今魅せろ(選手名)\n全力で行け",
+  "name": "投手汎用",
+  "number": 102
   }
   ]

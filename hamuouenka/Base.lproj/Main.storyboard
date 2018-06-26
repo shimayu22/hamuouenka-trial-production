@@ -76,10 +76,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1番を選んでください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTR-L8-vSs">
-                                <rect key="frame" x="44" y="40" width="286" height="21"/>
+                                <rect key="frame" x="44" y="60" width="286" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="286" id="Q77-kR-yfX"/>
-                                    <constraint firstAttribute="height" constant="21" id="mMp-fe-Bbo"/>
+                                    <constraint firstAttribute="height" constant="25" id="mMp-fe-Bbo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,7 +147,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yTR-L8-vSs" firstAttribute="top" secondItem="hRa-Gf-rrN" secondAttribute="bottom" constant="20" id="2Tc-ND-5Ke"/>
+                            <constraint firstItem="yTR-L8-vSs" firstAttribute="top" secondItem="hRa-Gf-rrN" secondAttribute="bottom" constant="40" id="2Tc-ND-5Ke"/>
                             <constraint firstItem="eW7-WM-jGf" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="6LQ-PK-1gX"/>
                             <constraint firstItem="3BY-vj-1MK" firstAttribute="centerX" secondItem="xgd-DE-7Aj" secondAttribute="centerX" id="74c-Ab-ngB"/>
                             <constraint firstAttribute="bottom" secondItem="3BY-vj-1MK" secondAttribute="bottom" constant="160" id="cuk-Zw-vUz"/>

@@ -72,9 +72,10 @@ class PlayerSelectViewController: UIViewController {
         //選択したボタンが9個以下なら配列に追加して選手ボタンを非活性にする
         if sp.order.count < 9{
             sp.order.append(btn.tag)
-            self.isEnabledEnterButton(flag: false, tagNumber: btn.tag)
+            if btn.tag < 100 {
+            self.isEnabledPlayerButton(flag: false, tagNumber: btn.tag)
             self.isAlphaEnterButton(flag: false, tagNumber: btn.tag)
-            
+            }
             //追加した後まだ9個以下なら次の打順の選手を選ぶようにラベルを書き換える
             if sp.order.count < 9{
                 self.updateBorderText(number:sp.order.count + 1)
@@ -91,8 +92,10 @@ class PlayerSelectViewController: UIViewController {
             escape = sp.order[sp.index]
             sp.order[sp.index] = btn.tag
             sp.participatedPlayer.append(btn.tag)
-            self.isEnabledEnterButton(flag: false, tagNumber: btn.tag)
-            self.isAlphaEnterButton(flag: false, tagNumber: btn.tag)
+            if btn.tag < 100 {
+                self.isEnabledPlayerButton(flag: false, tagNumber: btn.tag)
+                self.isAlphaEnterButton(flag: false, tagNumber: btn.tag)
+            }
             self.isEnabledEnterButton(flag: true)
             
         }
@@ -105,7 +108,7 @@ class PlayerSelectViewController: UIViewController {
     }
     
     //選手ボタンをtrueだと活性化、falseだと不活性化する
-    func isEnabledEnterButton(flag:Bool,tagNumber:Int){
+    func isEnabledPlayerButton(flag:Bool,tagNumber:Int){
         let playerButton = self.view.viewWithTag(tagNumber) as! UIButton
         playerButton.isEnabled = flag
     }
@@ -152,7 +155,7 @@ class PlayerSelectViewController: UIViewController {
         
         //participatedPlayerに入っている非活性にしたボタンを活性化する
         for i in sheardPlayerData.playerRetainData.participatedPlayer{
-            self.isEnabledEnterButton(flag: true, tagNumber: i)
+            self.isEnabledPlayerButton(flag: true, tagNumber: i)
             self.isAlphaEnterButton(flag: true, tagNumber: i)
         }
         
@@ -179,7 +182,7 @@ class PlayerSelectViewController: UIViewController {
             
             //配列の最後尾に格納されている番号のボタンを活性化する
             let lastelement:Int = sheardPlayerData.playerRetainData.order.last!
-            self.isEnabledEnterButton(flag: true, tagNumber: lastelement)
+            self.isEnabledPlayerButton(flag: true, tagNumber: lastelement)
             self.isAlphaEnterButton(flag: true, tagNumber: lastelement)
             
             //配列の最後尾の要素を削除する
@@ -196,7 +199,7 @@ class PlayerSelectViewController: UIViewController {
     //選手ボタン押した後のキャンセル処理
     func pushCancelButton(){
         let sp = sheardPlayerData.playerRetainData
-        self.isEnabledEnterButton(flag: true, tagNumber: sp.order[sp.index])
+        self.isEnabledPlayerButton(flag: true, tagNumber: sp.order[sp.index])
         self.isAlphaEnterButton(flag: true, tagNumber: sp.order[sp.index])
         self.isEnabledEnterButton(flag: false)
         sp.order[sp.index] = escape
