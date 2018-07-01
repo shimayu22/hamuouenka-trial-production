@@ -159,6 +159,12 @@ class PlayerSelectViewController: UIViewController {
             self.isAlphaEnterButton(flag: true, tagNumber: i)
         }
         
+        //orderに入っている非活性にしたボタンを活性化する(決定ボタン押す前にクリアを押した時に必要)
+        for i in sheardPlayerData.playerRetainData.order{
+            self.isEnabledPlayerButton(flag: true, tagNumber: i)
+            self.isAlphaEnterButton(flag: true, tagNumber: i)
+        }
+        
         //orderの中身を空にする
         sheardPlayerData.playerRetainData.order.removeAll()
         

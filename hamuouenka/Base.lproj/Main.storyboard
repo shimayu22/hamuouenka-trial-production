@@ -320,7 +320,7 @@
                                     <constraint firstAttribute="bottom" secondItem="3s8-ic-jlk" secondAttribute="bottom" id="U7H-PZ-b8z"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-CK-AEb" userLabel="AdView" customClass="GADBannerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-CK-AEb" userLabel="AdView">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.91352094780000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -342,9 +342,6 @@
                             <constraint firstItem="aHI-B0-LeW" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="nrq-Ym-J2F"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bannerView" destination="hqb-CK-AEb" id="LmB-Jg-21o"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-uK-mFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="o5u-6o-4nC" userLabel="Exit" sceneMemberID="exit"/>

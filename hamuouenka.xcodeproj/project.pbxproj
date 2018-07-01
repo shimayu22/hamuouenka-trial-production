@@ -25,11 +25,9 @@
 		D2864E5E1E6E7FE100D272CC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = D2864E5D1E6E7FE100D272CC /* player.json */; };
 		D2864E601E6E8D7600D272CC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2864E5F1E6E8D7600D272CC /* ModelController.swift */; };
 		D2864E621E6EB1DE00D272CC /* icon-baseball01.png in Resources */ = {isa = PBXBuildFile; fileRef = D2864E611E6EB1DE00D272CC /* icon-baseball01.png */; };
-		D6003EA841132752CB317C17 /* libPods-hamuouenka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 241745D6E60A4FAC57A522F4 /* libPods-hamuouenka.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		241745D6E60A4FAC57A522F4 /* libPods-hamuouenka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hamuouenka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6111C6DC20CED3D3001F3B3F /* ParseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 		6116CBB41D8405E900A531FC /* BattingOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder.swift; sourceTree = "<group>"; };
 		611D31831D2F451E007BF6B8 /* hamuouenka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hamuouenka.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,8 +45,6 @@
 		619F40001F443D4200CA7E36 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		61BE8CE51D8132CB00243A24 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		61D150411F3C2C0500CC89C3 /* PlayerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
-		7592EA6B72193A4B8DF79EBE /* Pods-hamuouenka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamuouenka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hamuouenka/Pods-hamuouenka.debug.xcconfig"; sourceTree = "<group>"; };
-		B40C01B21E27BF11147001F8 /* Pods-hamuouenka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hamuouenka.release.xcconfig"; path = "Pods/Target Support Files/Pods-hamuouenka/Pods-hamuouenka.release.xcconfig"; sourceTree = "<group>"; };
 		D2864E5D1E6E7FE100D272CC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 		D2864E5F1E6E8D7600D272CC /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		D2864E611E6EB1DE00D272CC /* icon-baseball01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-baseball01.png"; sourceTree = "<group>"; };
@@ -59,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6003EA841132752CB317C17 /* libPods-hamuouenka.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +66,6 @@
 			children = (
 				611D31851D2F451E007BF6B8 /* hamuouenka */,
 				611D31841D2F451E007BF6B8 /* Products */,
-				BC387630B2FE4155976ADFAE /* Pods */,
-				BCEFE74812D55D3FDF833F42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,23 +119,6 @@
 			path = "処理";
 			sourceTree = "<group>";
 		};
-		BC387630B2FE4155976ADFAE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7592EA6B72193A4B8DF79EBE /* Pods-hamuouenka.debug.xcconfig */,
-				B40C01B21E27BF11147001F8 /* Pods-hamuouenka.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BCEFE74812D55D3FDF833F42 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				241745D6E60A4FAC57A522F4 /* libPods-hamuouenka.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,12 +126,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 611D31951D2F451F007BF6B8 /* Build configuration list for PBXNativeTarget "hamuouenka" */;
 			buildPhases = (
-				8A99C3C5698C860AC6CC1C37 /* [CP] Check Pods Manifest.lock */,
 				611D317F1D2F451E007BF6B8 /* Sources */,
 				611D31801D2F451E007BF6B8 /* Frameworks */,
 				611D31811D2F451E007BF6B8 /* Resources */,
-				E681FC998CF641E7C0781064 /* [CP] Embed Pods Frameworks */,
-				45E83DE0EA77322E36CFFBE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,57 +189,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		45E83DE0EA77322E36CFFBE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hamuouenka/Pods-hamuouenka-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A99C3C5698C860AC6CC1C37 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hamuouenka-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E681FC998CF641E7C0781064 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hamuouenka/Pods-hamuouenka-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		611D317F1D2F451E007BF6B8 /* Sources */ = {
@@ -417,7 +339,6 @@
 		};
 		611D31961D2F451F007BF6B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7592EA6B72193A4B8DF79EBE /* Pods-hamuouenka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -436,7 +357,6 @@
 		};
 		611D31971D2F451F007BF6B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B40C01B21E27BF11147001F8 /* Pods-hamuouenka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
