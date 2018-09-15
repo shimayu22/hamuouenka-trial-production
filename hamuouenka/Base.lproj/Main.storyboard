@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,11 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9335.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFJ-PL-sdA">
+                                <rect key="frame" x="27" y="92" width="320" height="320"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sY-Ee-AAD">
-                                <rect key="frame" x="67" y="115" width="240" height="281"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="67" y="191" width="240" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="FsD-6o-LbP"/>
+                                    <constraint firstAttribute="height" constant="200" id="FsD-6o-LbP"/>
                                     <constraint firstAttribute="width" constant="240" id="pnt-vz-Ei0"/>
                                 </constraints>
                                 <string key="text">当アプリはあくまで家で応援歌を暗記するアプリです。
@@ -33,35 +36,52 @@
 球場ではボールから目を離すことは大変危険です。
 
 球場では絶対に使用しないでください。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTt-41-YTD">
-                                <rect key="frame" x="147" y="454" width="80" height="50"/>
+                                <rect key="frame" x="147" y="451" width="80" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="K6n-1t-z8d"/>
                                     <constraint firstAttribute="height" constant="50" id="VFU-M4-gpe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="OK！"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="WeK-yA-91j" kind="show" id="bNT-jj-dtR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご注意！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMD-bH-xsn">
+                                <rect key="frame" x="126" y="141" width="122" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iRd-BB-DaS" firstAttribute="top" secondItem="PTt-41-YTD" secondAttribute="bottom" constant="166" id="9sc-3A-FIr"/>
                             <constraint firstItem="PTt-41-YTD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EHs-Pw-l0c"/>
+                            <constraint firstItem="DMD-bH-xsn" firstAttribute="top" secondItem="i95-TB-G8t" secondAttribute="bottom" constant="121" id="LIP-Af-rxD"/>
+                            <constraint firstItem="DMD-bH-xsn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LUd-2W-8rj"/>
                             <constraint firstItem="7sY-Ee-AAD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tj9-iM-Nta"/>
-                            <constraint firstItem="PTt-41-YTD" firstAttribute="top" secondItem="7sY-Ee-AAD" secondAttribute="bottom" constant="58" id="XQk-8m-Uiv"/>
-                            <constraint firstItem="7sY-Ee-AAD" firstAttribute="top" secondItem="i95-TB-G8t" secondAttribute="bottom" constant="95" id="vg4-Ju-lF9"/>
+                            <constraint firstItem="BFJ-PL-sdA" firstAttribute="top" secondItem="i95-TB-G8t" secondAttribute="bottom" constant="72" id="ecZ-3B-GVX"/>
+                            <constraint firstItem="BFJ-PL-sdA" firstAttribute="bottom" secondItem="7sY-Ee-AAD" secondAttribute="bottom" constant="21" id="jhF-zZ-iwK"/>
+                            <constraint firstItem="BFJ-PL-sdA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="kcf-Av-uy9"/>
+                            <constraint firstItem="BFJ-PL-sdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qhj-Eq-pRo"/>
+                            <constraint firstItem="7sY-Ee-AAD" firstAttribute="top" secondItem="i95-TB-G8t" secondAttribute="bottom" constant="171" id="vg4-Ju-lF9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cb7-lQ-fXy"/>
+                    <connections>
+                        <outlet property="OK" destination="PTt-41-YTD" id="WIO-hQ-Kaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-666" y="328.5"/>
+            <point key="canvasLocation" x="-666.39999999999998" y="327.88605697151428"/>
         </scene>
         <!--Player Select View Controller-->
         <scene sceneID="WdQ-7t-248">
@@ -104,7 +124,10 @@
                                             <constraint firstAttribute="height" constant="50" id="MG2-gE-C3Y"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Y8B-dF-2as"/>
                                         </constraints>
-                                        <state key="normal" title="クリア"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="クリア">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="clear:" destination="WeK-yA-91j" eventType="touchUpInside" id="Aii-nD-D7t"/>
                                         </connections>
@@ -115,7 +138,10 @@
                                             <constraint firstAttribute="height" constant="50" id="RGG-wm-VTi"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="lTp-B8-ioQ"/>
                                         </constraints>
-                                        <state key="normal" title="決定"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="決定">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="q1Z-Wl-1he" kind="show" identifier="PushAdView" id="lqC-Tp-cxG"/>
                                         </connections>
@@ -126,7 +152,10 @@
                                             <constraint firstAttribute="height" constant="50" id="C0M-cV-tpn"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ccD-06-S0a"/>
                                         </constraints>
-                                        <state key="normal" title="一人戻る"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="一人戻る">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="Back:" destination="WeK-yA-91j" eventType="touchUpInside" id="aDM-eR-eZF"/>
                                         </connections>
@@ -139,7 +168,10 @@
                                     <constraint firstAttribute="height" constant="50" id="11b-3q-bqT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ZRD-IB-2Mu"/>
                                 </constraints>
-                                <state key="normal" title="キャンセル"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="キャンセル">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Cancel:" destination="WeK-yA-91j" eventType="touchUpInside" id="8Ve-07-6hL"/>
                                 </connections>
@@ -285,26 +317,28 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2x-cD-1vo">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="9Is-JZ-uWf"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="t78-JR-WVW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="戻る"/>
+                                                <state key="normal" title="戻る">
+                                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="csH-n6-eMm" kind="unwind" unwindAction="backToTopWithSegue:" id="Gnm-Qz-6tQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qi-xa-Lt1">
                                                 <rect key="frame" x="150" y="0.0" width="100" height="50"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="O2Q-QZ-JEK"/>
                                                     <constraint firstAttribute="height" constant="50" id="Osh-1O-lfA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="交代"/>
+                                                <state key="normal" title="交代">
+                                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="o5u-6o-4nC" kind="unwind" unwindAction="backToTopForChangeWithSegue:" id="lj3-in-2aV"/>
                                                 </connections>
@@ -312,7 +346,6 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.35713607209999998" green="1" blue="0.30191010810000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3uW-7D-3fm"/>
                                     <constraint firstItem="3s8-ic-jlk" firstAttribute="top" secondItem="24d-pX-JsZ" secondAttribute="top" id="9QV-Vt-mls"/>
@@ -342,6 +375,10 @@
                             <constraint firstItem="aHI-B0-LeW" firstAttribute="leading" secondItem="4YQ-yi-nia" secondAttribute="leading" id="nrq-Ym-J2F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BackSelect" destination="R2x-cD-1vo" id="XET-Kp-6yz"/>
+                        <outlet property="PlayerChange" destination="1Qi-xa-Lt1" id="7vL-kK-NLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-uK-mFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="o5u-6o-4nC" userLabel="Exit" sceneMemberID="exit"/>
@@ -349,4 +386,7 @@
             <point key="canvasLocation" x="861.60000000000002" y="327.88605697151428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="9335.png" width="724" height="585"/>
+    </resources>
 </document>

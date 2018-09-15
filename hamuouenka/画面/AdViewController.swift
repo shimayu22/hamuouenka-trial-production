@@ -12,10 +12,20 @@ class AdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let buttonList:[UIButton] = [BackSelect,PlayerChange]
+        buttonList.forEach{ operateButton in
+            operateButton.layer.borderColor = UIColor.blue.cgColor
+            operateButton.layer.borderWidth = 4.0
+            operateButton.layer.cornerRadius = 10.0
+        }
 
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var BackSelect: UIButton!
+    @IBOutlet weak var PlayerChange: UIButton!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

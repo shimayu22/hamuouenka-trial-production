@@ -21,7 +21,7 @@ class MakeButton{
         //UIScrollViewを作る
         let scrollView:UIScrollView = UIScrollView()
         scrollView.frame = CGRect(x:((self.base.view.bounds.width - CGFloat(kViewWidth))/2), y: 100, width: CGFloat(kViewWidth), height: CGFloat(kViewHeight))
-        scrollView.backgroundColor = UIColor.lightGray
+        //scrollView.backgroundColor = UIColor.lightGray
         
         var a:Int = 0
         //スクロールの全長を指定する
@@ -58,8 +58,11 @@ class MakeButton{
             //ボタンの文字色
             simpleButton.setTitleColor(UIColor.blue, for: .normal)
             
-            //ボタンの色
-            simpleButton.backgroundColor = UIColor.orange
+            //ボタンの枠の色
+            simpleButton.layer.borderColor = UIColor.orange.cgColor
+            
+            //ボタンの枠線の太さ
+            simpleButton.layer.borderWidth = 4.0
             
             //タップした時の文字色
             simpleButton.setTitleColor(UIColor.white, for: .highlighted)
@@ -86,7 +89,7 @@ class MakeButton{
             simpleButton.tag = sheardPlayerData.playerRetainData.playerData[i].uniformNumber
             
             //角丸を設定
-            simpleButton.layer.cornerRadius = 10
+            simpleButton.layer.cornerRadius = 10.0
             
             //ボタンを押した時の挙動
             simpleButton.addTarget(self, action: #selector(PlayerSelectViewController.pushPlayerButton(_:)), for: .touchDown)

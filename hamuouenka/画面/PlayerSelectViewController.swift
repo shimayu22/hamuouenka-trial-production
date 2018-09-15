@@ -13,9 +13,18 @@ class PlayerSelectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //キャンセルボタンを透明化＆非活性化
-        Cancel.isEnabled = false
-        Cancel.alpha = 0.0
+        //操作ボタンの装飾
+        let buttonList:[UIButton] = [Enter,Cancel,clear,Back]
+        buttonList.forEach{ operateButton in
+            operateButton.layer.borderColor = UIColor.blue.cgColor
+            operateButton.layer.borderWidth = 4.0
+            operateButton.layer.cornerRadius = 10.0
+        }
+        
+        //決定・キャンセルボタンを透明化＆非活性化
+        self.isEnabledOperateButton(buttonName: Enter, flag: false)
+        self.isEnabledOperateButton(buttonName: Cancel, flag: false)
+
         //ボタンを作る
         let makeButton = MakeButton(base: self)
         makeButton.makeButton()
@@ -60,11 +69,9 @@ class PlayerSelectViewController: UIViewController {
     @IBAction func backToTopForChange(segue:UIStoryboard){
         Border.text = "交代選手を選択してください"
         debuglabel.text = "選手を選択してください"
-        Back.isEnabled = false
-        Back.alpha = 0.0
-        Cancel.isEnabled = true
-        Cancel.alpha = 1.0
-        self.isEnabledEnterButton(flag: false)
+        self.isEnabledOperateButton(buttonName: Back, flag: false)
+        self.isEnabledOperateButton(buttonName: Cancel, flag: true)
+        self.isEnabledOperateButton(buttonName: Enter, flag: false)
     }
     
     func buttonCP(btn: UIButton){
@@ -82,7 +89,7 @@ class PlayerSelectViewController: UIViewController {
                 
             }else{
                 //9個になったら決定ボタンを活性化して「決定ボタンを押してください」と表示する
-                self.isEnabledEnterButton(flag: true)
+                self.isEnabledOperateButton(buttonName: Enter, flag: true)
                 self.updateBorderText(number: 999)
                 
                 sp.participatedPlayer = sp.order
@@ -96,15 +103,20 @@ class PlayerSelectViewController: UIViewController {
                 self.isEnabledPlayerButton(flag: false, tagNumber: btn.tag)
                 self.isAlphaEnterButton(flag: false, tagNumber: btn.tag)
             }
-            self.isEnabledEnterButton(flag: true)
+            self.isEnabledOperateButton(buttonName: Enter, flag: true)
             
         }
         self.updateDebugLabel()
     }
     
-    //Enterボタンをtrueだと活性化、falseだと不活性化する
-    func isEnabledEnterButton(flag:Bool){
-        Enter.isEnabled = flag
+    //操作するボタンをtrueだと活性化、falseだと不活性化する
+    func isEnabledOperateButton(buttonName:UIButton,flag:Bool){
+        buttonName.isEnabled = flag
+        if flag {
+            buttonName.alpha = 1.0
+        }else{
+            buttonName.alpha = 0.0
+        }
     }
     
     //選手ボタンをtrueだと活性化、falseだと不活性化する
@@ -142,16 +154,14 @@ class PlayerSelectViewController: UIViewController {
     }
     
     func clearCP(){
-        //決定ボタンを非活性化する
-        self.isEnabledEnterButton(flag: false)
+        //決定ボタンを非活性化する＆透明化
+        self.isEnabledOperateButton(buttonName: Enter, flag: false)
         
         //キャンセルボタンを非活性化＆透明化
-        Cancel.isEnabled = false
-        Cancel.alpha = 0.0
+        self.isEnabledOperateButton(buttonName: Cancel, flag: false)
         
         //一人戻るボタンを活性化＆不透明化
-        Back.isEnabled = true
-        Back.alpha = 1.0
+        self.isEnabledOperateButton(buttonName: Back, flag: true)
         
         //participatedPlayerに入っている非活性にしたボタンを活性化する
         for i in sheardPlayerData.playerRetainData.participatedPlayer{
@@ -184,7 +194,7 @@ class PlayerSelectViewController: UIViewController {
             self.clearCP()
         }else{
             //決定ボタンを非活性化する
-            self.isEnabledEnterButton(flag: false)
+            self.isEnabledOperateButton(buttonName: Enter, flag: false)
             
             //配列の最後尾に格納されている番号のボタンを活性化する
             let lastelement:Int = sheardPlayerData.playerRetainData.order.last!
@@ -207,7 +217,7 @@ class PlayerSelectViewController: UIViewController {
         let sp = sheardPlayerData.playerRetainData
         self.isEnabledPlayerButton(flag: true, tagNumber: sp.order[sp.index])
         self.isAlphaEnterButton(flag: true, tagNumber: sp.order[sp.index])
-        self.isEnabledEnterButton(flag: false)
+        self.isEnabledOperateButton(buttonName: Enter, flag: false)
         sp.order[sp.index] = escape
         Border.text = "交代選手を選択してください"
         debuglabel.text = "選手を選択してください"

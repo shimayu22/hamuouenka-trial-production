@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var OK: UIButton!
     let parse = ParseJSON()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        OK.layer.borderColor = UIColor.blue.cgColor
+        OK.layer.borderWidth = 4.0
+        OK.layer.cornerRadius = 10.0
         
         //選手情報が入っているJSONをパースする
         parse.parseJSON()

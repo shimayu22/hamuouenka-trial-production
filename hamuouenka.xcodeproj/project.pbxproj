@@ -17,6 +17,7 @@
 		6127BDA1208C81FD002833AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BD9F208C81FC002833AA /* Constants.swift */; };
 		6127BDA2208C81FD002833AA /* MakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA0208C81FC002833AA /* MakeButton.swift */; };
 		6127BDA6208C8452002833AA /* PlayerRetainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6127BDA5208C8452002833AA /* PlayerRetainData.swift */; };
+		614948CB214D68AC00172629 /* 9335.png in Resources */ = {isa = PBXBuildFile; fileRef = 614948CA214D68AC00172629 /* 9335.png */; };
 		6157EB041D3B31FD009B32E4 /* PlayerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */; };
 		6198955E1DCF4D41008595CE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6198955D1DCF4D41008595CE /* SwiftyJSON.swift */; };
 		619F40011F443D4200CA7E36 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F40001F443D4200CA7E36 /* AdViewController.swift */; };
@@ -40,6 +41,7 @@
 		6127BD9F208C81FC002833AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6127BDA0208C81FC002833AA /* MakeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeButton.swift; sourceTree = "<group>"; };
 		6127BDA5208C8452002833AA /* PlayerRetainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRetainData.swift; sourceTree = "<group>"; };
+		614948CA214D68AC00172629 /* 9335.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9335.png; sourceTree = "<group>"; };
 		6157EB031D3B31FD009B32E4 /* PlayerSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSelectViewController.swift; sourceTree = "<group>"; };
 		6198955D1DCF4D41008595CE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		619F40001F443D4200CA7E36 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				6127BDA3208C820D002833AA /* 画面 */,
 				6127BDA4208C825C002833AA /* 処理 */,
 				D2864E611E6EB1DE00D272CC /* icon-baseball01.png */,
+				614948CA214D68AC00172629 /* 9335.png */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
@@ -183,6 +186,7 @@
 				D2864E5E1E6E7FE100D272CC /* player.json in Resources */,
 				611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */,
 				611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */,
+				614948CB214D68AC00172629 /* 9335.png in Resources */,
 				D2864E621E6EB1DE00D272CC /* icon-baseball01.png in Resources */,
 				611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */,
 			);
