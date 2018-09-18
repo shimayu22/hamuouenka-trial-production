@@ -238,7 +238,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name&amp;number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-jT-bPt">
-                                        <rect key="frame" x="87" y="130" width="200" height="30"/>
+                                        <rect key="frame" x="87" y="110" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="UbZ-Gf-7Ec"/>
                                             <constraint firstAttribute="width" constant="200" id="hZV-nw-XtK"/>
@@ -248,7 +248,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvi-gD-qBk">
-                                        <rect key="frame" x="37" y="190" width="300" height="180"/>
+                                        <rect key="frame" x="37" y="143" width="300" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ueJ-em-XCJ"/>
                                             <constraint firstAttribute="height" constant="180" id="w6n-jI-tpM"/>
@@ -264,8 +264,8 @@
                                     <constraint firstItem="Vzf-jT-bPt" firstAttribute="centerX" secondItem="yz1-gD-U6q" secondAttribute="centerX" id="GB0-Gw-tSB"/>
                                     <constraint firstItem="uvi-gD-qBk" firstAttribute="centerX" secondItem="yz1-gD-U6q" secondAttribute="centerX" id="Rjx-bJ-jwJ"/>
                                     <constraint firstAttribute="height" constant="400" id="SxB-b9-Kvr"/>
-                                    <constraint firstItem="Vzf-jT-bPt" firstAttribute="top" secondItem="5hg-pm-joK" secondAttribute="bottom" constant="50" id="UgD-Bw-zDf"/>
-                                    <constraint firstItem="uvi-gD-qBk" firstAttribute="top" secondItem="Vzf-jT-bPt" secondAttribute="bottom" constant="30" id="Uz7-5z-G8t"/>
+                                    <constraint firstItem="Vzf-jT-bPt" firstAttribute="top" secondItem="5hg-pm-joK" secondAttribute="bottom" constant="30" id="UgD-Bw-zDf"/>
+                                    <constraint firstItem="uvi-gD-qBk" firstAttribute="top" secondItem="Vzf-jT-bPt" secondAttribute="bottom" constant="3" id="Uz7-5z-G8t"/>
                                     <constraint firstItem="5hg-pm-joK" firstAttribute="top" secondItem="yz1-gD-U6q" secondAttribute="top" constant="50" id="X4k-t5-mic"/>
                                 </constraints>
                             </view>
