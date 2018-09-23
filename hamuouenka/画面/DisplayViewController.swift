@@ -9,10 +9,16 @@
 
 import UIKit
 
+protocol ChangeLabelDelegate: class{
+    func changeLabelText(buttingOrder:String)
+}
+
 class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
 
     //PageViewControllerのデータの準備
     var pageViewController: UIPageViewController?
+    //AdViewControllerにあるLabelを更新するためのDelegateの準備
+    var delegate:ChangeLabelDelegate?
     
     //最初からあるメソッド
     override func viewDidLoad() {
@@ -26,7 +32,9 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.delegate = self
         
         //startingViewController:の後に作成するクラス（か、StoryBoard ID？）を指定する
-        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(sheardPlayerData.playerRetainData.index, storyboard: self.storyboard!)!
+        //最初に表示するページは、スタメンを選んだ後は1番から、交代する場合は交代した打順から表示するようにした
+        let startingViewController: BattingOrder = self.modelController.viewControllerAtIndex(sheardPlayerData.playerRetainData.playerCahngeFlag ?  sheardPlayerData.playerRetainData.index : 0, storyboard: self.storyboard!)!
+        
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
         
@@ -85,5 +93,13 @@ class DisplayViewController: UIViewController, UIPageViewControllerDelegate {
         return .mid
     }
     
+    //スワイプが完了したら呼び出されるメソッド
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            let currentViewController = self.pageViewController!.viewControllers![0] as! BattingOrder
+            let indexOfCurrentViewController = self.modelController.indexOfViewController(currentViewController) + 1
+            delegate?.changeLabelText(buttingOrder: String(indexOfCurrentViewController) + "番")
+        }
+    }
     
 }

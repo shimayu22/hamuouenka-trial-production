@@ -10,8 +10,6 @@ import UIKit
 
 
 class BattingOrder: UIViewController {
-    
-    @IBOutlet weak var battingOrder: UILabel!
     @IBOutlet weak var nameNumber: UILabel!
     @IBOutlet weak var songText: UILabel!
     
@@ -25,7 +23,6 @@ class BattingOrder: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.battingOrder!.text = bo
         self.nameNumber!.text = name + " :背番号 " + String(number)
         self.songText!.text = sngtxt
 

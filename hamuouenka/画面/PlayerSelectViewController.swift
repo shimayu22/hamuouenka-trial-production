@@ -62,6 +62,8 @@ class PlayerSelectViewController: UIViewController {
     
     //戻ってくる時の処理
     @IBAction func backToTop(segue: UIStoryboardSegue) {
+        let sp = sheardPlayerData.playerRetainData
+        sp.playerCahngeFlag = false
         self.clearCP()
     }
     
@@ -72,6 +74,8 @@ class PlayerSelectViewController: UIViewController {
         self.isEnabledOperateButton(buttonName: Back, flag: false)
         self.isEnabledOperateButton(buttonName: Cancel, flag: true)
         self.isEnabledOperateButton(buttonName: Enter, flag: false)
+        let sp = sheardPlayerData.playerRetainData
+        sp.playerCahngeFlag = true
     }
     
     func buttonCP(btn: UIButton){

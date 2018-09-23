@@ -18,6 +18,8 @@ class sheardPlayerData: NSObject {
     var participatedPlayer :[Int]
     //選手交替の時のインデックス
     var index:Int
+    //選手交代時のフラグ(選手交代時にTrueになり、選択画面に戻るとFalseになる)
+    var playerCahngeFlag:Bool
     
     class var playerRetainData: sheardPlayerData {
         struct Static {
@@ -33,6 +35,7 @@ class sheardPlayerData: NSObject {
         self.order = []
         self.participatedPlayer = []
         self.index = 0
+        self.playerCahngeFlag = false
         
         super.init()
     }

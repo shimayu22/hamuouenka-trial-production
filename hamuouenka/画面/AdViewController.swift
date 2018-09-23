@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdViewController: UIViewController {
+class AdViewController: UIViewController,ChangeLabelDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,17 +20,31 @@ class AdViewController: UIViewController {
             operateButton.layer.cornerRadius = 10.0
         }
 
+        ButtingOrderNumberLabel.text = String(sheardPlayerData.playerRetainData.index + 1) + "番"
         // Do any additional setup after loading the view.
     }
 
     @IBOutlet weak var BackSelect: UIButton!
     @IBOutlet weak var PlayerChange: UIButton!
+    @IBOutlet weak var ButtingOrderNumberLabel: UILabel!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //Delegateを受ける準備
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DisplayViewSegue"{
+            let nextViewController = segue.destination as! DisplayViewController
+            nextViewController.delegate = self
+        }
+    }
+    
+    //LabelをDelegateで更新する
+    func changeLabelText(buttingOrder:String) {
+        ButtingOrderNumberLabel.text = buttingOrder
+    }
 
     /*
     // MARK: - Navigation

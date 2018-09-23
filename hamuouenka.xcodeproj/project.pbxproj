@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6111C6DD20CED3D3001F3B3F /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111C6DC20CED3D3001F3B3F /* ParseJSON.swift */; };
 		6116CBB51D8405E900A531FC /* BattingOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116CBB41D8405E900A531FC /* BattingOrder.swift */; };
+		611CFFB62157D86100CB064D /* 7417.png in Resources */ = {isa = PBXBuildFile; fileRef = 611CFFB52157D86100CB064D /* 7417.png */; };
 		611D31871D2F451F007BF6B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D31861D2F451F007BF6B8 /* AppDelegate.swift */; };
 		611D31891D2F451F007BF6B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611D31881D2F451F007BF6B8 /* ViewController.swift */; };
 		611D318C1D2F451F007BF6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611D318A1D2F451F007BF6B8 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		6111C6DC20CED3D3001F3B3F /* ParseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 		6116CBB41D8405E900A531FC /* BattingOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattingOrder.swift; sourceTree = "<group>"; };
+		611CFFB52157D86100CB064D /* 7417.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7417.png; sourceTree = "<group>"; };
 		611D31831D2F451E007BF6B8 /* hamuouenka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hamuouenka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611D31861D2F451F007BF6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611D31881D2F451F007BF6B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				6127BDA4208C825C002833AA /* 処理 */,
 				D2864E611E6EB1DE00D272CC /* icon-baseball01.png */,
 				614948CA214D68AC00172629 /* 9335.png */,
+				611CFFB52157D86100CB064D /* 7417.png */,
 				611D318D1D2F451F007BF6B8 /* Assets.xcassets */,
 				611D318F1D2F451F007BF6B8 /* LaunchScreen.storyboard */,
 				611D31921D2F451F007BF6B8 /* Info.plist */,
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611CFFB62157D86100CB064D /* 7417.png in Resources */,
 				D2864E5E1E6E7FE100D272CC /* player.json in Resources */,
 				611D31911D2F451F007BF6B8 /* LaunchScreen.storyboard in Resources */,
 				611D318E1D2F451F007BF6B8 /* Assets.xcassets in Resources */,
